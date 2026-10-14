@@ -1,0 +1,3 @@
+# Preserve ngspice's original generated formatting in committed evidence.
+examples/rc_validation/rc_transient_ngspice.txt whitespace=-blank-at-eol
+examples/rc_validation/ngspice_console.log whitespace=-blank-at-eof

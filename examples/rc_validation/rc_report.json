@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "timestamp_utc": "2026-10-14T11:01:52.125657+00:00",
+  "python_version": "3.12.14",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "dependency_versions": {
+    "NumPy": "2.3.5",
+    "SciPy": "1.17.0",
+    "Matplotlib": "3.10.8",
+    "Pandas": "2.2.3"
+  },
+  "ngspice_version": "ngspice-44.2 : Circuit level simulation program",
+  "command": "/workspace/spice-lab/.local/bin/ngspice -b -o ngspice.log /workspace/spice-lab/circuits/rc_transient.cir",
+  "measurements": {
+    "resistance_ohms": 1000.0,
+    "capacitance_farads": 1e-06,
+    "theoretical_tau_s": 0.001,
+    "fitted_tau_s": 0.000999999668702524,
+    "fitted_tau_relative_error": 3.31297476008352e-07,
+    "threshold_voltage_v": 0.6321205588285577,
+    "threshold_tau_s": 0.0009999998394505181,
+    "threshold_tau_relative_error": 1.6054948193122698e-07,
+    "maximum_absolute_error_v": 1.2188016129677237e-07,
+    "rms_error_v": 5.8464259994783544e-08,
+    "sample_count": 4014,
+    "first_time_s": 2e-08,
+    "last_time_s": 0.008
+  },
+  "checks": {
+    "sample count >= 1000": true,
+    "simulation reaches >= 7.9 ms": true,
+    "initial capacitor voltage near 0 V": true,
+    "capacitor voltage rises monotonically": true,
+    "fitted tau relative error <= 1%": true,
+    "63.2121% crossing relative error <= 1%": true,
+    "waveform maximum absolute error <= 0.001 V": true
+  }
+}
