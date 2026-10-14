@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "manifest_runs_verified": 298,
+  "archived_file_sha256_verified": 2462,
+  "op_rows_crosschecked_against_raw": 252,
+  "ac_rows_crosschecked_against_raw": 756,
+  "finite_difference_rows_crosschecked": 252,
+  "source_files_sha256_verified": 5,
+  "method": "Independent csv.reader plus direct archived ASCII raw parsing; every manifest file SHA-256 checked; CSV values recomputed from actual archived raw OP/AC/finite-difference observations."
+}

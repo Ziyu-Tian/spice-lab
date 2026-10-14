@@ -1,0 +1,34 @@
+[
+  {
+    "name": "extreme_explicit_ground_1e-12_readouts",
+    "returncode": 0
+  },
+  {
+    "name": "extreme_explicit_ground_1e-14_readouts",
+    "returncode": 0
+  },
+  {
+    "name": "extreme_implicit_ground_1e-12_readouts",
+    "returncode": 0
+  },
+  {
+    "name": "extreme_implicit_ground_1e-14_readouts",
+    "returncode": 0
+  },
+  {
+    "name": "nominal_explicit_ground_1e-12_readouts",
+    "returncode": 0
+  },
+  {
+    "name": "nominal_explicit_ground_1e-14_readouts",
+    "returncode": 0
+  },
+  {
+    "name": "nominal_implicit_ground_1e-12_readouts",
+    "returncode": 0
+  },
+  {
+    "name": "nominal_implicit_ground_1e-14_readouts",
+    "returncode": 0
+  }
+]

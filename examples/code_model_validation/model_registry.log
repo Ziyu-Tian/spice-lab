@@ -1,0 +1,141 @@
+
+Note: No compatibility mode selected!
+
+
+Circuit: inspect loaded xspice code model registry
+
+
+Devices available in the simulator
+
+URC                  :	Uniform R.C. line
+ASRC                 :	Arbitrary Source 
+BJT                  :	Bipolar Junction Transistor
+BSIM1                :	Berkeley Short Channel IGFET Model
+BSIM2                :	Berkeley Short Channel IGFET Model
+BSIM3                :	Berkeley Short Channel IGFET Model Version-3
+BSIM3v0              :	Berkeley Short Channel IGFET Model Version-3 (3.0)
+BSIM3v1              :	Berkeley Short Channel IGFET Model Version-3 (3.1)
+BSIM3v32             :	Berkeley Short Channel IGFET Model Version-3
+B4SOI                :	Berkeley SOI MOSFET model version 4.4.0
+BSIM4                :	Berkeley Short Channel IGFET Model-4
+BSIM4v5              :	Berkeley Short Channel IGFET Model-4
+BSIM4v6              :	Berkeley Short Channel IGFET Model-4
+BSIM4v7              :	Berkeley Short Channel IGFET Model-4
+B3SOIPD              :	Berkeley SOI (PD) MOSFET model version 2.2.3
+B3SOIFD              :	Berkeley SOI MOSFET (FD) model version 2.1
+B3SOIDD              :	Berkeley SOI MOSFET (DD) model version 2.1
+Capacitor            :	Fixed capacitor
+CCCS                 :	Current controlled current source
+CCVS                 :	Linear current controlled current source
+CplLines             :	Simple Coupled Multiconductor Lines
+CSwitch              :	Current controlled ideal switch
+Diode                :	Junction Diode model
+HFET1                :	HFET1 Model
+HFET2                :	HFET2 Model
+hicum2               :	High Current Model for BJT
+HiSIM2               :	Hiroshima University STARC IGFET Model 2.8.0
+HiSIMHV1             :	Hiroshima University STARC IGFET Model - HiSIM_HV v.1
+HiSIMHV2             :	Hiroshima University STARC IGFET Model - HiSIM_HV v.2
+Inductor             :	Fixed inductor
+mutual               :	Mutual inductors
+Isource              :	Independent current source
+JFET                 :	Junction Field effect transistor
+JFET2                :	Short channel field effect transistor
+LTRA                 :	Lossy transmission line
+MES                  :	GaAs MESFET model
+MESA                 :	GaAs MESFET model
+Mos1                 :	Level 1 MOSfet model with Meyer capacitance model
+Mos2                 :	Level 2 MOSfet model with Meyer capacitance model
+Mos3                 :	Level 3 MOSfet model with Meyer capacitance model
+Mos6                 :	Level 6 MOSfet model with Meyer capacitance model
+Mos9                 :	Modified Level 3 MOSfet model
+Resistor             :	Simple linear resistor
+SOI3                 :	Basic Thick Film SOI3 model v2.7
+Switch               :	Ideal voltage controlled switch
+Tranline             :	Lossless transmission line
+TransLine            :	Simple Lossy Transmission Line
+VBIC                 :	Vertical Bipolar Inter-Company Model
+VCCS                 :	Voltage controlled current source
+VCVS                 :	Voltage controlled voltage source
+Vsource              :	Independent voltage source
+VDMOS                :	DMOS model based on Level 1 MOSFET model
+NBJT                 :	1D Numerical Bipolar Junction Transistor model
+NBJT2                :	2D Numerical Bipolar Junction Transistor model
+NUMD                 :	1D Numerical Junction Diode model
+NUMD2                :	2D Numerical Junction Diode model
+NUMOS                :	2D Numerical MOS Field Effect Transistor model
+spice2poly           :	2G6 compatible polynomial controlled source
+climit               :	controlled limiter block
+divide               :	divider block
+d_dt                 :	differentiator block
+gain                 :	A simple gain block
+hyst                 :	hysteresis block
+ilimit               :	current limiter block
+int                  :	integrator block
+limit                :	limit block
+mult                 :	multiplier block
+multi_input_pwl      :	multi_input_pwl block
+oneshot              :	one-shot
+pwl                  :	piecwise linear controlled source
+sine                 :	controlled sine wave oscillator
+slew                 :	a simple slew rate follower block
+square               :	controlled square wave oscillator
+summer               :	summer block
+xfer                 :	AC transfer function block
+s_xfer               :	s-domain transfer function block
+triangle             :	controlled triangle wave oscillator
+filesource           :	File Source
+delay                :	analog delay line
+pwlts                :	piecwise linear controlled source, time input
+adc_bridge           :	analog-to-digital converter node bridge
+dac_bridge           :	digital-to-analog converter node bridge
+bidi_bridge          :	bidirectional digital/analog node bridge
+d_and                :	digital n-input and gate
+d_buffer             :	digital one-bit-wide buffer
+d_dff                :	digital d-type flip flop
+d_dlatch             :	digital d-type latch
+d_fdiv               :	digital frequency divider
+d_genlut             :	digital n-input x m-output look-up table gate
+d_inverter           :	digital one-bit-wide inverter
+d_jkff               :	digital jk-type flip flop
+d_lut                :	digital n-input look-up table gate
+d_nand               :	digital n-input nand gate
+d_nor                :	digital n-input nor gate
+d_open_c             :	digital one-bit-wide open-collector buffer
+d_open_e             :	digital one-bit-wide open-emitter buffer
+d_or                 :	digital n-input or gate
+d_osc                :	controlled digital oscillator
+d_process            :	digital process
+d_pulldown           :	digital pulldown resistor
+d_pullup             :	digital pullup resistor
+d_pwm                :	duty cycle controlled digital oscillator
+d_ram                :	digital random-access memory
+d_source             :	digital signal source
+d_srff               :	digital set-reset flip flop
+d_srlatch            :	digital sr-type latch
+d_state              :	digital state machine
+d_tff                :	digital toggle flip flop
+d_tristate           :	digital one-bit-wide tristate buffer
+d_xnor               :	digital n-input xnor gate
+d_xor                :	digital n-input xor gate
+d_cosim              :	Bridge to an irreversible digital model
+aswitch              :	analog switch
+capacitoric          :	Capacitor with voltage initial condition
+cmeter               :	ATESSE 1 compatible capacitance meter
+core                 :	magnetic core
+inductoric           :	Inductor with current initial condition
+lcouple              :	inductive coupling (for use with 'core' model)
+lmeter               :	ATESSE 1 compatible inductance meter
+potentiometer        :	potentiometer
+zener                :	zener diode
+memristor            :	Memristor interface
+sidiode              :	simple diode
+pswitch              :	analog PSPICE compatible switch
+d_to_real            :	Node bridge from digital to real with enable
+real_delay           :	A Z ** -1 block working on real data
+real_gain            :	A gain block for event-driven real data
+real_to_v            :	Node bridge from real to analog voltage
+table2d              :	2D table model
+table3d              :	3D table model
+
+ngspice-44.2 done

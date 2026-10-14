@@ -1,0 +1,7 @@
+library,path,present,sha256,ldd_resolved,registered_model,model_registered
+spice2poly.cm,/workspace/spice-lab/.local/ngspice/usr/lib/x86_64-linux-gnu/ngspice/spice2poly.cm,True,3401deb0ee1cf58fac01f50d550b81b449374928e3117050a520d564072ed7f0,True,spice2poly,True
+analog.cm,/workspace/spice-lab/.local/ngspice/usr/lib/x86_64-linux-gnu/ngspice/analog.cm,True,a28d833f82d6eb0df09371d3e3cddd87e31517bb1594624d9024eefe4acbb60c,True,gain,True
+digital.cm,/workspace/spice-lab/.local/ngspice/usr/lib/x86_64-linux-gnu/ngspice/digital.cm,True,c23c0111e6acb64d13719f87d2ada15468dbe335cf14c9eb20706dbd0791008b,True,d_inverter,True
+xtradev.cm,/workspace/spice-lab/.local/ngspice/usr/lib/x86_64-linux-gnu/ngspice/xtradev.cm,True,9ef5a75ca19dc0b05df3927b980f547a05167d8e645cefbe586d28d589d8435f,True,cmeter,True
+xtraevt.cm,/workspace/spice-lab/.local/ngspice/usr/lib/x86_64-linux-gnu/ngspice/xtraevt.cm,True,12e595e6887e33b3598eb2021202602447ebefb2e40b8b577cb51f3bd07abc0d,True,real_gain,True
+table.cm,/workspace/spice-lab/.local/ngspice/usr/lib/x86_64-linux-gnu/ngspice/table.cm,True,94154607c73dbb84590a168f5c84abce28258480da507b4c194fb6652e09a10d,True,table2d,True

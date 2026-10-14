@@ -1,0 +1,1939 @@
+{
+  "timestamp_utc": "2026-10-14T11:46:45.219569+00:00",
+  "passed": false,
+  "command": "/workspace/spice-lab/.venv/bin/python /workspace/spice-lab/scripts/simulate_bjt_resistance.py --output-dir /workspace/spice-lab/results/bjt_development01 --ngspice ngspice",
+  "versions": {
+    "python": "3.12.14",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8",
+    "pandas": "2.2.3",
+    "ngspice": "ngspice-44.2 : Circuit level simulation program"
+  },
+  "parameters": {
+    "target_ohm": [
+      3399.0,
+      2641.0,
+      1858.0
+    ],
+    "temperature_c": [
+      0.0,
+      25.0,
+      50.0
+    ],
+    "sample_current_a": [
+      -0.0001,
+      -5e-05,
+      -1e-05,
+      0.0,
+      1e-05,
+      5e-05,
+      0.0001
+    ],
+    "fixed_bias_v": [
+      0.45,
+      0.5,
+      0.55,
+      0.6,
+      0.65,
+      0.7
+    ],
+    "ac_frequency_hz": [
+      1,
+      1000,
+      100000
+    ],
+    "ac_current_a": 1e-06,
+    "voltage_window_v": 5.0,
+    "gmin_s": 1e-12,
+    "finite_difference_fraction": 0.001,
+    "zero_current_delta_a": 1e-08
+  },
+  "checks": {
+    "all_scan_conditions_computed": true,
+    "all_ac_observations_computed": true,
+    "reference_static_error_below_1e-6_percent": true,
+    "reference_ac_relative_error_below_1e-8": true,
+    "nominal_calibration_error_below_1e-4_percent": true,
+    "port_kcl_residual_below_1e-12_a": true,
+    "device_kcl_residual_below_1e-12_a": false,
+    "in_window_low_frequency_ac_matches_fd_within_1_percent": false,
+    "no_ngspice_execution_errors": true
+  },
+  "calibrations": [
+    {
+      "target_ohm": 3399.0,
+      "temperature_c": 25,
+      "nominal_current_a": 5e-05,
+      "clamped_port_voltage_v": 0.16995000000000002,
+      "calibrated_bias_v": 0.5816630992498681,
+      "measured_port_current_a": 4.999999999996674e-05,
+      "residual_a": -3.326467790457088e-17,
+      "ngspice_evaluations": 15
+    },
+    {
+      "target_ohm": 2641.0,
+      "temperature_c": 25,
+      "nominal_current_a": 5e-05,
+      "clamped_port_voltage_v": 0.13205,
+      "calibrated_bias_v": 0.5844508316056654,
+      "measured_port_current_a": 4.999999999999449e-05,
+      "residual_a": -5.5091022889419694e-18,
+      "ngspice_evaluations": 15
+    },
+    {
+      "target_ohm": 1858.0,
+      "temperature_c": 25,
+      "nominal_current_a": 5e-05,
+      "clamped_port_voltage_v": 0.09290000000000001,
+      "calibrated_bias_v": 0.5980813495315046,
+      "measured_port_current_a": 4.999999999999449e-05,
+      "residual_a": -5.5091022889419694e-18,
+      "ngspice_evaluations": 14
+    }
+  ],
+  "counts": {
+    "scan_conditions": 252,
+    "successful_scan_conditions": 252,
+    "bjt_conditions": 189,
+    "reference_conditions": 63,
+    "ac_observations": 756,
+    "comparison_rows": 432,
+    "zero_current_points": 36,
+    "out_of_window_bjt_points": 38,
+    "ngspice_processes": 298,
+    "warning_runs": 298,
+    "failed_runs": 0
+  },
+  "measurements": {
+    "max_reference_static_error_percent": 2.220446049250313e-14,
+    "max_nominal_static_error_percent": 4.0876191320649014e-10,
+    "max_in_window_lowfreq_fd_relative_difference": 0.04329812692862535,
+    "max_port_kcl_residual_a": 1.3552527156068805e-20,
+    "max_device_kcl_residual_a": 2.9680128904638456e-07
+  },
+  "nominal_points": [
+    {
+      "comparison_target_ohm": 3399.0,
+      "bias_v": 0.5816630992498681,
+      "port_voltage_v": 0.1699500000006947,
+      "port_current_a": 5e-05,
+      "apparent_resistance_ohm": 3399.000000013894,
+      "incremental_fd_ohm": 19942.815220646837,
+      "static_error_percent": 4.0876191320649014e-10,
+      "incremental_error_percent": 486.72595529999523
+    },
+    {
+      "comparison_target_ohm": 2641.0,
+      "bias_v": 0.5844508316056654,
+      "port_voltage_v": 0.1320499999999766,
+      "port_current_a": 5e-05,
+      "apparent_resistance_ohm": 2640.999999999532,
+      "incremental_fd_ohm": 4872.894986990838,
+      "static_error_percent": -1.77191594730175e-11,
+      "incremental_error_percent": 84.50946561873678
+    },
+    {
+      "comparison_target_ohm": 1858.0,
+      "bias_v": 0.5980813495315046,
+      "port_voltage_v": 0.09289999999999854,
+      "port_current_a": 5e-05,
+      "apparent_resistance_ohm": 1857.9999999999707,
+      "incremental_fd_ohm": 1329.341103619014,
+      "static_error_percent": -1.5765166949677223e-12,
+      "incremental_error_percent": -28.453116059256523
+    }
+  ],
+  "failures": [],
+  "warnings": [
+    {
+      "run_id": "calibration_r3399_00",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "calibration_r3399_01",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "calibration_r3399_02",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "calibration_r3399_03",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "calibration_r3399_04",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "calibration_r3399_05",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "calibration_r3399_06",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "calibration_r3399_07",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "calibration_r3399_08",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "calibration_r3399_09",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "calibration_r3399_10",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "calibration_r3399_11",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "calibration_r3399_12",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "calibration_r3399_13",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "calibration_r3399_14",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "calibration_r2641_00",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "calibration_r2641_01",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "calibration_r2641_02",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "calibration_r2641_03",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "calibration_r2641_04",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "calibration_r2641_05",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "calibration_r2641_06",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "calibration_r2641_07",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "calibration_r2641_08",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "calibration_r2641_09",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "calibration_r2641_10",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "calibration_r2641_11",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "calibration_r2641_12",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "calibration_r2641_13",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "calibration_r2641_14",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "calibration_r1858_00",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "calibration_r1858_01",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "calibration_r1858_02",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "calibration_r1858_03",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "calibration_r1858_04",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "calibration_r1858_05",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "calibration_r1858_06",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "calibration_r1858_07",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "calibration_r1858_08",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "calibration_r1858_09",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "calibration_r1858_10",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "calibration_r1858_11",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "calibration_r1858_12",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "calibration_r1858_13",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_45_t0_m100u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_45_t0_m50u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_45_t0_m10u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_45_t0_p0u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_45_t0_p10u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_45_t0_p50u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_45_t0_p100u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_45_t25_m100u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_45_t25_m50u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_45_t25_m10u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_45_t25_p0u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_45_t25_p10u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_45_t25_p50u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_45_t25_p100u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_45_t50_m100u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_45_t50_m50u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_45_t50_m10u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_45_t50_p0u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_45_t50_p10u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_45_t50_p50u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_45_t50_p100u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_50_t0_m100u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_50_t0_m50u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_50_t0_m10u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_50_t0_p0u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_50_t0_p10u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_50_t0_p50u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_50_t0_p100u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_50_t25_m100u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_50_t25_m50u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_50_t25_m10u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_50_t25_p0u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_50_t25_p10u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_50_t25_p50u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_50_t25_p100u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_50_t50_m100u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_50_t50_m50u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_50_t50_m10u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_50_t50_p0u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_50_t50_p10u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_50_t50_p50u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_50_t50_p100u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_55_t0_m100u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_55_t0_m50u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_55_t0_m10u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_55_t0_p0u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_55_t0_p10u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_55_t0_p50u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_55_t0_p100u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_55_t25_m100u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_55_t25_m50u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_55_t25_m10u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_55_t25_p0u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_55_t25_p10u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_55_t25_p50u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_55_t25_p100u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_55_t50_m100u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_55_t50_m50u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_55_t50_m10u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_55_t50_p0u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_55_t50_p10u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_55_t50_p50u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_55_t50_p100u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_60_t0_m100u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_60_t0_m50u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_60_t0_m10u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_60_t0_p0u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_60_t0_p10u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_60_t0_p50u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_60_t0_p100u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_60_t25_m100u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_60_t25_m50u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_60_t25_m10u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_60_t25_p0u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_60_t25_p10u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_60_t25_p50u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_60_t25_p100u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_60_t50_m100u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_60_t50_m50u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_60_t50_m10u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_60_t50_p0u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_60_t50_p10u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_60_t50_p50u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_60_t50_p100u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_65_t0_m100u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_65_t0_m50u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_65_t0_m10u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_65_t0_p0u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_65_t0_p10u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_65_t0_p50u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_65_t0_p100u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_65_t25_m100u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_65_t25_m50u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_65_t25_m10u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_65_t25_p0u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_65_t25_p10u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_65_t25_p50u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_65_t25_p100u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_65_t50_m100u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_65_t50_m50u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_65_t50_m10u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_65_t50_p0u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_65_t50_p10u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_65_t50_p50u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_65_t50_p100u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_70_t0_m100u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_70_t0_m50u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_70_t0_m10u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_70_t0_p0u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_70_t0_p10u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_70_t0_p50u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_70_t0_p100u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_70_t25_m100u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_70_t25_m50u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_70_t25_m10u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_70_t25_p0u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_70_t25_p10u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_70_t25_p50u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_70_t25_p100u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_70_t50_m100u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_70_t50_m50u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_70_t50_m10u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_70_t50_p0u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_70_t50_p10u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_70_t50_p50u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "fixed_70_t50_p100u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "cal_r3399_t0_m100u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "cal_r3399_t0_m50u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "cal_r3399_t0_m10u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "cal_r3399_t0_p0u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "cal_r3399_t0_p10u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "cal_r3399_t0_p50u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "cal_r3399_t0_p100u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "cal_r3399_t25_m100u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "cal_r3399_t25_m50u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "cal_r3399_t25_m10u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "cal_r3399_t25_p0u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "cal_r3399_t25_p10u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "cal_r3399_t25_p50u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "cal_r3399_t25_p100u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "cal_r3399_t50_m100u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "cal_r3399_t50_m50u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "cal_r3399_t50_m10u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "cal_r3399_t50_p0u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "cal_r3399_t50_p10u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "cal_r3399_t50_p50u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "cal_r3399_t50_p100u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "cal_r2641_t0_m100u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "cal_r2641_t0_m50u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "cal_r2641_t0_m10u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "cal_r2641_t0_p0u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "cal_r2641_t0_p10u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "cal_r2641_t0_p50u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "cal_r2641_t0_p100u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "cal_r2641_t25_m100u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "cal_r2641_t25_m50u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "cal_r2641_t25_m10u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "cal_r2641_t25_p0u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "cal_r2641_t25_p10u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "cal_r2641_t25_p50u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "cal_r2641_t25_p100u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "cal_r2641_t50_m100u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "cal_r2641_t50_m50u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "cal_r2641_t50_m10u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "cal_r2641_t50_p0u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "cal_r2641_t50_p10u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "cal_r2641_t50_p50u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "cal_r2641_t50_p100u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "cal_r1858_t0_m100u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "cal_r1858_t0_m50u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "cal_r1858_t0_m10u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "cal_r1858_t0_p0u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "cal_r1858_t0_p10u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "cal_r1858_t0_p50u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "cal_r1858_t0_p100u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "cal_r1858_t25_m100u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "cal_r1858_t25_m50u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "cal_r1858_t25_m10u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "cal_r1858_t25_p0u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "cal_r1858_t25_p10u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "cal_r1858_t25_p50u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "cal_r1858_t25_p100u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "cal_r1858_t50_m100u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "cal_r1858_t50_m50u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "cal_r1858_t50_m10u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "cal_r1858_t50_p0u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "cal_r1858_t50_p10u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "cal_r1858_t50_p50u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "cal_r1858_t50_p100u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "ref_r3399_t0_m100u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "ref_r3399_t0_m50u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "ref_r3399_t0_m10u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "ref_r3399_t0_p0u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "ref_r3399_t0_p10u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "ref_r3399_t0_p50u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "ref_r3399_t0_p100u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "ref_r3399_t25_m100u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "ref_r3399_t25_m50u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "ref_r3399_t25_m10u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "ref_r3399_t25_p0u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "ref_r3399_t25_p10u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "ref_r3399_t25_p50u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "ref_r3399_t25_p100u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "ref_r3399_t50_m100u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "ref_r3399_t50_m50u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "ref_r3399_t50_m10u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "ref_r3399_t50_p0u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "ref_r3399_t50_p10u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "ref_r3399_t50_p50u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "ref_r3399_t50_p100u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "ref_r2641_t0_m100u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "ref_r2641_t0_m50u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "ref_r2641_t0_m10u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "ref_r2641_t0_p0u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "ref_r2641_t0_p10u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "ref_r2641_t0_p50u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "ref_r2641_t0_p100u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "ref_r2641_t25_m100u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "ref_r2641_t25_m50u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "ref_r2641_t25_m10u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "ref_r2641_t25_p0u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "ref_r2641_t25_p10u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "ref_r2641_t25_p50u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "ref_r2641_t25_p100u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "ref_r2641_t50_m100u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "ref_r2641_t50_m50u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "ref_r2641_t50_m10u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "ref_r2641_t50_p0u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "ref_r2641_t50_p10u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "ref_r2641_t50_p50u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "ref_r2641_t50_p100u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "ref_r1858_t0_m100u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "ref_r1858_t0_m50u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "ref_r1858_t0_m10u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "ref_r1858_t0_p0u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "ref_r1858_t0_p10u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "ref_r1858_t0_p50u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "ref_r1858_t0_p100u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "ref_r1858_t25_m100u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "ref_r1858_t25_m50u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "ref_r1858_t25_m10u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "ref_r1858_t25_p0u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "ref_r1858_t25_p10u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "ref_r1858_t25_p50u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "ref_r1858_t25_p100u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "ref_r1858_t50_m100u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "ref_r1858_t50_m50u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "ref_r1858_t50_m10u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "ref_r1858_t50_p0u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "ref_r1858_t50_p10u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "ref_r1858_t50_p50u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "ref_r1858_t50_p100u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "gmin14_fixed_45_t0_p100u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    },
+    {
+      "run_id": "gmin14_cal_r2641_t25_p50u",
+      "warnings": [
+        "Comments and warnings go to log-file: ngspice.log"
+      ]
+    }
+  ]
+}

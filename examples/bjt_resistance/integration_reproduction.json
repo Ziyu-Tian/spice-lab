@@ -1,0 +1,66 @@
+{
+  "passed": true,
+  "command": "bash scripts/run_bjt_experiment.sh",
+  "cwd": "/workspace/spice-lab",
+  "observed_output_dir": "/workspace/spice-lab/results/bjt_wQg9Ef",
+  "models_passed": true,
+  "model_check_count": 18,
+  "simulation_checks": {
+    "all_scan_conditions_computed": true,
+    "all_ac_observations_computed": true,
+    "reference_static_error_below_1e-6_percent": true,
+    "reference_ac_relative_error_below_1e-8": true,
+    "nominal_calibration_error_below_1e-4_percent": true,
+    "port_kcl_residual_below_1e-12_a": true,
+    "in_window_device_kcl_residual_below_1e-12_a": true,
+    "model_kcl_gmin_adjusted_residual_below_1e-12_a": true,
+    "in_window_low_frequency_ac_matches_fd_within_1_percent": true,
+    "no_ngspice_execution_errors": true
+  },
+  "data_comparison": {
+    "operating_points.csv": {
+      "rows": 252,
+      "identical_data": true,
+      "sha256": "b624d4d0a45be5064d8f1f4e67ec842030ba73d8ded264ccda733814cd3ac9c8"
+    },
+    "impedance.csv": {
+      "rows": 756,
+      "identical_data": true,
+      "sha256": "ef250dd1b1afec38fe502d30f2c4fdfc4fd5c3ee8fde65cb98d3fa9144fde365"
+    },
+    "resistance_comparisons.csv": {
+      "rows": 432,
+      "identical_data": true,
+      "sha256": "adfdb13475268deb7017ce0405e45e984d52d9359b31fd0e5afb865f97d571bd"
+    },
+    "offset.csv": {
+      "rows": 36,
+      "identical_data": true,
+      "sha256": "457bd7b40ff56967717c19769b941f52b8f84a974734a0ba9806b66608c0f43b"
+    },
+    "calibration.csv": {
+      "rows": 3,
+      "identical_data": true,
+      "sha256": "1cb71c6ba66737fe68d134459aebf0eb3668e85a197d637617c6deeefff5aa06"
+    },
+    "gmin_sensitivity.csv": {
+      "rows": 4,
+      "identical_data": true,
+      "sha256": "851cfb03bcf4c35d4045f70f049b4b117d67c9ab6fd0d16ad3a733aa4652b317"
+    }
+  },
+  "substrate_comparison_identical": true,
+  "substrate_checks": {
+    "eight_valid_op_runs": true,
+    "model_readout_sum_with_is_below_1e-12_a": true,
+    "external_kcl_with_substrate_within_solver_tolerance": true,
+    "explicit_substrate_sensor_matches_model_is": true,
+    "gdsub_equals_gmin": true,
+    "implicit_and_explicit_ground_match": true
+  },
+  "source_sha256": {
+    "scripts/run_bjt_experiment.sh": "f3067bd8c82d506f7be99e6f8d6909318d8406c87e376ffec89ad588288b13c6",
+    "scripts/report_bjt_resistance.py": "88a523e02dbe45f6a0963e563ef9fb3a9f3bf3f7126b9ccfd3e9960719ee370c",
+    "scripts/verify_bjt_substrate.py": "b5526c44a557e3db0622de1cd78cc241cdc5a752eaa77291c1980c4a80a4e292"
+  }
+}

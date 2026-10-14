@@ -1,0 +1,32 @@
+Title: default versus explicitly grounded bjt substrate: nominal_implicit_ground_gmin12
+Date: Wed Oct 14 12:02:56  2026
+Command: ngspice-44.2, Build Sun Jan 12 08:19:15 UTC 2025
+Plotname: Operating Point
+Flags: real
+No. Variables: 11
+No. Points: 1
+Variables:
+	0	v(port)	voltage
+	1	v(port)	voltage
+	2	v(base)	voltage
+	3	i(vcollector)	current
+	4	i(vbias)	current
+	5	i(vemitter)	current
+	6	@q1[ic]	notype
+	7	@q1[ib]	notype
+	8	@q1[ie]	notype
+	9	@q1[is]	notype
+	10	@q1[gdsub]	notype
+Values:
+ 0	1.320499999999766e-01
+	1.320499999999766e-01
+	5.758801296737454e-01
+	5.000000000000000e-05
+	-8.570701931919999e-07
+	5.085707006117633e-05
+	4.999999986798330e-05
+	8.570701931931972e-07
+	-5.085707019317650e-05
+	1.319999999999766e-13
+	1.000000000000000e-12
+

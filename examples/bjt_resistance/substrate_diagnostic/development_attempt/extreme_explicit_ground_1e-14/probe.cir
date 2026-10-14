@@ -1,0 +1,25 @@
+Physics review of default/explicit substrate: extreme_explicit_ground_1e-14
+Isample 0 port DC 0.0001
+Vcollector port collector DC 0
+Q1 collector base emitter substrate GENERIC_NPN
+Vemitter emitter 0 DC 0
+Vsubstrate substrate 0 DC 0
+Rbias supply base 10k
+Vbias supply 0 DC 0.45
+* Educational generic NPN using ngspice's built-in Gummel-Poon BJT.
+* This is not a manufacturer's transistor model and has no avalanche breakdown.
+.model GENERIC_NPN NPN (IS=1e-14 BF=100 BR=1 VAF=100 VAR=10
++ RB=100 RC=1 RE=1 CJE=10p CJC=4p TF=0.4n TR=50n
++ EG=1.11 XTI=3 TNOM=25)
+
+.temp 0
+.options tnom=25 reltol=1e-7 abstol=1e-13 vntol=1e-10 gmin=1e-14
+.control
+set noaskquit
+set filetype=ascii
+set numdgt=15
+op
+write op.raw v(port) v(base) i(vcollector) i(vbias) i(vemitter) i(vsubstrate) @q1[ic] @q1[ib] @q1[ie] @q1[is] @q1[gdsub] v(q1#collector)
+quit
+.endc
+.end

@@ -58,19 +58,51 @@ SOURCES
         for deb in "${debs[@]}"; do
             dpkg-deb --extract "$deb" "$LOCAL_DIR/ngspice"
         done
-        cat > "$LOCAL_DIR/bin/ngspice" <<'WRAPPER'
-#!/usr/bin/env bash
-set -euo pipefail
-prefix="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/../ngspice" && pwd)"
-multiarch="$(dpkg-architecture -qDEB_HOST_MULTIARCH)"
-export LD_LIBRARY_PATH="$prefix/usr/lib/$multiarch${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
-export SPICE_SCRIPTS="$prefix/usr/share/ngspice/scripts"
-exec "$prefix/usr/bin/ngspice" "$@"
-WRAPPER
-        chmod +x "$LOCAL_DIR/bin/ngspice"
     elif ! command -v ngspice >/dev/null; then
         printf 'APT did not provide an ngspice executable.\n' >&2
         exit 1
+    fi
+    if [[ -x "$LOCAL_DIR/ngspice/usr/bin/ngspice" ]]; then
+        # APT's system spinit contains absolute /usr/lib paths. Rootless package
+        # extraction does not relocate these; keep the authenticated package
+        # file unchanged and use ngspice's documented SPICE_SCRIPTS override.
+        multiarch="$(dpkg-architecture -qDEB_HOST_MULTIARCH)"
+        python3 - "$LOCAL_DIR/ngspice" "$LOCAL_DIR/ngspice-runtime" "$multiarch" <<'RELOCATE'
+import pathlib
+import re
+import sys
+
+prefix, runtime = map(pathlib.Path, sys.argv[1:3])
+multiarch = sys.argv[3]
+source = prefix / "usr/share/ngspice/scripts/spinit"
+model_dir = prefix / "usr/lib" / multiarch / "ngspice"
+if any(char.isspace() for char in str(model_dir)):
+    raise SystemExit("ngspice Code Model paths must not contain whitespace; use a workspace path without spaces")
+required = ("spice2poly.cm", "analog.cm", "digital.cm", "xtradev.cm", "xtraevt.cm", "table.cm")
+for name in required:
+    if not (model_dir / name).is_file():
+        raise SystemExit(f"Missing required ngspice Code Model library: {model_dir / name}")
+text = source.read_text()
+pattern = rf'(?m)^([ \t]*(?:codemodel|osdi))[ \t]+/usr/lib/{re.escape(multiarch)}/ngspice/(\S+)[ \t]*$'
+# codemodel passes its filename straight to dlopen; quotes become filename bytes.
+text, count = re.subn(pattern, lambda m: f'{m[1]} {model_dir / m[2]}', text)
+if count < len(required):
+    raise SystemExit("Unexpected packaged spinit: required model paths could not be relocated")
+runtime.mkdir(parents=True, exist_ok=True)
+(runtime / "spinit").write_text(text)
+print(f"Relocated {count} model paths into {runtime / 'spinit'}")
+RELOCATE
+        cat > "$LOCAL_DIR/bin/ngspice" <<'WRAPPER'
+#!/usr/bin/env bash
+set -euo pipefail
+local_dir="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd)"
+prefix="$local_dir/ngspice"
+multiarch="$(dpkg-architecture -qDEB_HOST_MULTIARCH)"
+export LD_LIBRARY_PATH="$prefix/usr/lib/$multiarch${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
+export SPICE_SCRIPTS="$local_dir/ngspice-runtime"
+exec "$prefix/usr/bin/ngspice" "$@"
+WRAPPER
+        chmod +x "$LOCAL_DIR/bin/ngspice"
     fi
 elif ! command -v ngspice >/dev/null; then
     # Other Debian/Ubuntu releases use their native package, requiring root/sudo.
@@ -104,4 +136,6 @@ print('Python', sys.version.split()[0])
 for module in (numpy, scipy, matplotlib, pandas):
     print(module.__name__, module.__version__)
 PY
+python "$PROJECT_DIR/scripts/test_ngspice_models.py" \
+    --output-dir "$LOCAL_DIR/code_model_validation"
 printf '\nSetup complete. In Bash run: source "%s/.local/env.sh"\n' "$PROJECT_DIR"

@@ -1,0 +1,122 @@
+{
+  "note": "Independent review diagnostic; not part of formal 252-point scan. First attempts preserved in sibling directories failed to write a requested internal-node vector. Valid readout attempts are suffixed _readouts. Source links refer to official GitHub mirror master; installed ngspice 44.2 behavior verified directly.",
+  "source_links": [
+    "https://github.com/ngspice/ngspice/blob/master/src/spicelib/devices/bjt/bjtload.c#L458",
+    "https://github.com/ngspice/ngspice/blob/master/src/spicelib/devices/bjt/bjtask.c#L239",
+    "https://github.com/ngspice/ngspice/blob/master/src/spicelib/devices/bjt/bjtsetup.c#L454"
+  ],
+  "observations": [
+    {
+      "name": "extreme_explicit_ground_1e-12_readouts",
+      "vport_v": 296801.2891463816,
+      "collector_current_a": 0.0001,
+      "bias_delivered_a": -2.964655648190424e-07,
+      "emitter_current_into_device_a": -9.940670783600315e-05,
+      "substrate_current_out_a": 2.968012890463816e-07,
+      "gdsub_s": 1e-12,
+      "model_is_a": 2.968012890463816e-07,
+      "three_terminal_residual_a": 2.968265991778031e-07,
+      "four_terminal_residual_a": 2.531013142151748e-11,
+      "intrinsic_readout_sum_a": -2.9680128904638456e-07,
+      "readout_sum_including_is_a": -2.964615315390051e-21
+    },
+    {
+      "name": "extreme_explicit_ground_1e-14_readouts",
+      "vport_v": 338626.3964598609,
+      "collector_current_a": 0.0001,
+      "bias_delivered_a": -3.091047219520708e-09,
+      "emitter_current_into_device_a": -9.999354034210162e-05,
+      "substrate_current_out_a": 3.386263963598609e-09,
+      "gdsub_s": 1e-14,
+      "model_is_a": 3.386263963598609e-09,
+      "three_terminal_residual_a": 3.3686106788656696e-09,
+      "four_terminal_residual_a": -1.7653284732939248e-11,
+      "intrinsic_readout_sum_a": -3.3862639635970446e-09,
+      "readout_sum_including_is_a": 1.5641985383377753e-21
+    },
+    {
+      "name": "extreme_implicit_ground_1e-12_readouts",
+      "vport_v": 296801.2891463816,
+      "collector_current_a": 0.0001,
+      "bias_delivered_a": -2.964655648190424e-07,
+      "emitter_current_into_device_a": -9.940670783600315e-05,
+      "substrate_current_out_a": 2.968012890463816e-07,
+      "gdsub_s": 1e-12,
+      "model_is_a": 2.968012890463816e-07,
+      "three_terminal_residual_a": 2.968265991778031e-07,
+      "four_terminal_residual_a": 2.531013142151748e-11,
+      "intrinsic_readout_sum_a": -2.9680128904638456e-07,
+      "readout_sum_including_is_a": -2.964615315390051e-21
+    },
+    {
+      "name": "extreme_implicit_ground_1e-14_readouts",
+      "vport_v": 338626.3964598609,
+      "collector_current_a": 0.0001,
+      "bias_delivered_a": -3.091047219520708e-09,
+      "emitter_current_into_device_a": -9.999354034210162e-05,
+      "substrate_current_out_a": 3.386263963598609e-09,
+      "gdsub_s": 1e-14,
+      "model_is_a": 3.386263963598609e-09,
+      "three_terminal_residual_a": 3.3686106788656696e-09,
+      "four_terminal_residual_a": -1.7653284732939248e-11,
+      "intrinsic_readout_sum_a": -3.3862639635970446e-09,
+      "readout_sum_including_is_a": 1.5641985383377753e-21
+    },
+    {
+      "name": "nominal_explicit_ground_1e-12_readouts",
+      "vport_v": 0.1320499999999766,
+      "collector_current_a": 5e-05,
+      "bias_delivered_a": 8.570701931919999e-07,
+      "emitter_current_into_device_a": -5.085707006117633e-05,
+      "substrate_current_out_a": 1.319999999999766e-13,
+      "gdsub_s": 1e-12,
+      "model_is_a": 1.319999999999766e-13,
+      "three_terminal_residual_a": 1.3201567524703459e-13,
+      "four_terminal_residual_a": 1.5675247057994094e-17,
+      "intrinsic_readout_sum_a": -1.320000017493786e-13,
+      "readout_sum_including_is_a": -1.7494020005202814e-21
+    },
+    {
+      "name": "nominal_explicit_ground_1e-14_readouts",
+      "vport_v": 0.1320499265376879,
+      "collector_current_a": 5e-05,
+      "bias_delivered_a": 8.57070117158555e-07,
+      "emitter_current_into_device_a": -5.08570701158301e-05,
+      "substrate_current_out_a": 1.319999265376879e-15,
+      "gdsub_s": 1e-14,
+      "model_is_a": 1.319999265376879e-15,
+      "three_terminal_residual_a": 1.3284593694193325e-15,
+      "four_terminal_residual_a": 8.46010404245354e-18,
+      "intrinsic_readout_sum_a": -1.3200025924739456e-15,
+      "readout_sum_including_is_a": -3.3270970666054658e-21
+    },
+    {
+      "name": "nominal_implicit_ground_1e-12_readouts",
+      "vport_v": 0.1320499999999766,
+      "collector_current_a": 5e-05,
+      "bias_delivered_a": 8.570701931919999e-07,
+      "emitter_current_into_device_a": -5.085707006117633e-05,
+      "substrate_current_out_a": 1.319999999999766e-13,
+      "gdsub_s": 1e-12,
+      "model_is_a": 1.319999999999766e-13,
+      "three_terminal_residual_a": 1.3201567524703459e-13,
+      "four_terminal_residual_a": 1.5675247057994094e-17,
+      "intrinsic_readout_sum_a": -1.320000017493786e-13,
+      "readout_sum_including_is_a": -1.7494020005202814e-21
+    },
+    {
+      "name": "nominal_implicit_ground_1e-14_readouts",
+      "vport_v": 0.1320499265376879,
+      "collector_current_a": 5e-05,
+      "bias_delivered_a": 8.57070117158555e-07,
+      "emitter_current_into_device_a": -5.08570701158301e-05,
+      "substrate_current_out_a": 1.319999265376879e-15,
+      "gdsub_s": 1e-14,
+      "model_is_a": 1.319999265376879e-15,
+      "three_terminal_residual_a": 1.3284593694193325e-15,
+      "four_terminal_residual_a": 8.46010404245354e-18,
+      "intrinsic_readout_sum_a": -1.3200025924739456e-15,
+      "readout_sum_including_is_a": -3.3270970666054658e-21
+    }
+  ]
+}
