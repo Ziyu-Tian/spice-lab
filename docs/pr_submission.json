@@ -1,0 +1,28 @@
+{
+  "observed_at_shanghai": "2026-10-14T20:10:11.016202+08:00",
+  "branch": "experiment/bjt-resistance-simulation",
+  "pull_request_created": false,
+  "command": [
+    "gh",
+    "pr",
+    "create",
+    "--repo",
+    "Ziyu-Tian/spice-lab",
+    "--base",
+    "main",
+    "--head",
+    "experiment/bjt-resistance-simulation",
+    "--title",
+    "Fix ngspice Code Model paths and evaluate BJT resistance",
+    "--body-file",
+    "docs/PR_DESCRIPTION.md"
+  ],
+  "cwd": "/workspace/spice-lab",
+  "exit_code": 1,
+  "observed_error": "Post \"https://api.github.com/graphql\": Forbidden",
+  "network_diagnosis": "The enforced cloud network policy does not allow api.github.com. A HEAD connectivity check returned proxy CONNECT HTTP 403; Git fetch and push to github.com work.",
+  "configuration_draft": "api.github.com was added to the custom allowed domains without replacing package-manager presets. Saving the draft did not apply or publish the setting.",
+  "required_action": "Review and save the network change in the existing environment settings, then publish the environment. Retry the same PR command after access is applied.",
+  "github_provided_creation_url": "https://github.com/Ziyu-Tian/spice-lab/pull/new/experiment/bjt-resistance-simulation",
+  "automatic_merge_performed": false
+}
