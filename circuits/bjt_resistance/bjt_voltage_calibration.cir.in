@@ -1,0 +1,21 @@
+Generic NPN nominal calibration by clamped collector voltage: {run_id}
+* Calibration only: TEMP=25 C, collector voltage=target_R*50 uA.
+* Find a base bias at which the actual collector port draws 50 uA.
+Vtest port 0 DC {voltage_v:.16g}
+Vcollector port collector DC 0
+Q1 collector base emitter GENERIC_NPN
+Vemitter emitter 0 DC 0
+Rbias supply base 10k
+Vbias supply 0 DC {bias_v:.16g}
+{model}
+.temp 25
+.options tnom=25 reltol=1e-7 abstol=1e-13 vntol=1e-10 gmin={gmin_s:.16g}
+.control
+set noaskquit
+set filetype=ascii
+set numdgt=15
+op
+write op.raw v(port) v(base) i(vcollector) i(vbias)
+quit
+.endc
+.end

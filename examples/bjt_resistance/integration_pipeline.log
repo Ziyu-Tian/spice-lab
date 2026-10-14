@@ -1,0 +1,46 @@
+{
+  "passed": true,
+  "checks": 18,
+  "metrics": {
+    "analog_samples": 41,
+    "analog_max_abs_error_V": 4.440892098500626e-16,
+    "digital_samples": 2101,
+    "digital_stable_samples": 1783,
+    "digital_max_stable_abs_error_V": 0.0
+  },
+  "report": "/workspace/spice-lab/results/bjt_wQg9Ef/code_models/model_report.md"
+}
+{
+  "passed": true,
+  "counts": {
+    "scan_conditions": 252,
+    "successful_scan_conditions": 252,
+    "bjt_conditions": 189,
+    "reference_conditions": 63,
+    "ac_observations": 756,
+    "comparison_rows": 432,
+    "zero_current_points": 36,
+    "out_of_window_bjt_points": 38,
+    "ngspice_processes": 298,
+    "warning_runs": 0,
+    "failed_runs": 0
+  },
+  "checks": {
+    "all_scan_conditions_computed": true,
+    "all_ac_observations_computed": true,
+    "reference_static_error_below_1e-6_percent": true,
+    "reference_ac_relative_error_below_1e-8": true,
+    "nominal_calibration_error_below_1e-4_percent": true,
+    "port_kcl_residual_below_1e-12_a": true,
+    "in_window_device_kcl_residual_below_1e-12_a": true,
+    "model_kcl_gmin_adjusted_residual_below_1e-12_a": true,
+    "in_window_low_frequency_ac_matches_fd_within_1_percent": true,
+    "no_ngspice_execution_errors": true
+  },
+  "error": null
+}
+BJT substrate diagnostic: PASS
+Report: /workspace/spice-lab/results/bjt_wQg9Ef/substrate_diagnostic/report.md
+/workspace/spice-lab/results/bjt_wQg9Ef/report.md
+
+Experiment report: /workspace/spice-lab/results/bjt_wQg9Ef/report.md

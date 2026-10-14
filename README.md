@@ -92,3 +92,44 @@ uv pip compile requirements.in --generate-hashes --python-version 3.11 --univers
 ```
 
 普通安装无需 uv，脚本不改动锁文件。安装缓存、虚拟环境和运行结果均不提交到 Git。
+
+## BJT 表观电阻实验
+
+实验分支：`experiment/bjt-resistance-simulation`，通过 PR 审查，不直接修改 main。
+使用当前已配置的云端环境及现有检出目录，所有计算均由云端 ngspice 实际执行。
+
+本分支修复了 rootless 安装下 Code Model 的初始化路径：原包 `spinit` 中的
+`/usr/lib/.../ngspice/*.cm` 不会自动跟随解包目录改变。安装脚本现在生成独立的
+`.local/ngspice-runtime/spinit`，并设置官方支持的 `SPICE_SCRIPTS`，保留包内原文件。
+刷新已有安装时运行 `bash scripts/setup_env.sh`；该命令还会检查六库动态链接依赖、
+模型注册，并实际计算 analog gain 和 ADC→数字反相器→DAC 电路。
+[模型验证报告](examples/code_model_validation/model_report.md)保留原问题的预期失败、
+一次引号路径修复失败及最终验证证据。OSDI 默认未启用，本次未验证 OSDI 外部模型。
+
+一条命令执行模型检查、全量 BJT/参考电阻扫描、Python 处理和报告生成：
+
+```bash
+cd /workspace/spice-lab
+bash scripts/run_bjt_experiment.sh
+```
+
+该脚本在 `results/` 下创建新的独立输出目录，重复运行会保留各次证据。
+也可显式指定一个新目录：`bash scripts/run_bjt_experiment.sh results/my_bjt_run`。
+扫描程序拒绝覆盖已有执行清单；目录已经包含数据时应换一个新目录。
+
+电路模板及显式 generic NPN 模型位于 `circuits/bjt_resistance/`。
+参考目标为 3399、2641、1858 Ω；扫描 ±10、±50、±100 µA 和零电流偏移、
+0/25/50°C、六个固定偏置以及三个仅在 25°C/+50 µA 单点校准后冻结的偏置。
+静态 `V/I`、DC 差分 `dV/dI` 与 1 Hz/1 kHz/100 kHz 复阻抗分别保存。
+这是独立基极电源控制的三端电路，不预设 DS3930 内部模型或 HVAC 实际采样条件。
+
+一键流程还包括默认与显式接地衬底的 8 次 OP 对照，辨认数值 gmin 支路。
+仅读取 C/B/E 电流时的残差遗漏了默认衬底电流，不代表电荷守恒被破坏。
+输出包括工作点/阻抗/各目标误差/校准/偏移/gmin 敏感性 CSV、三幅 PNG、
+Markdown 报告、软件版本及逐次执行清单。每次实际运行的 deck、日志和 ASCII raw
+保存在 `raw_evidence.tar.gz`，执行清单记录退出码、警告、错误及文件 SHA-256。
+±5 V 仅为示例评估窗口；没有击穿或自热模型的高压数学解保留但标记，不能当成可实现结果。
+本实验的 1% 判据不是 HVAC 或 DS3930 的已知规格。
+
+本次结果见 [BJT 技术报告](examples/bjt_resistance/report.md)。
+已有 RC 示例、电路和测试程序保持原样；修复后的 RC 回归另存到 `results/`。

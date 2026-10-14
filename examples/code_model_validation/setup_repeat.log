@@ -1,0 +1,60 @@
+Hit:1 https://deb.debian.org/debian trixie InRelease
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Suggested packages:
+  ngspice-doc
+The following NEW packages will be installed:
+  ngspice
+0 upgraded, 1 newly installed, 0 to remove and 7 not upgraded.
+Need to get 0 B/4227 kB of archives.
+After this operation, 29.7 MB of additional disk space will be used.
+Download complete and in download only mode
+Relocated 14 model paths into /workspace/spice-lab/.local/ngspice-runtime/spinit
+Ignoring contourpy: markers 'python_full_version < "3.12"' don't match your environment
+Requirement already satisfied: contourpy==1.4.0 in ./.venv/lib/python3.12/site-packages (from -r /workspace/spice-lab/requirements.lock (line 75)) (1.4.0)
+Requirement already satisfied: cycler==0.12.1 in ./.venv/lib/python3.12/site-packages (from -r /workspace/spice-lab/requirements.lock (line 147)) (0.12.1)
+Requirement already satisfied: fonttools==4.66.1 in ./.venv/lib/python3.12/site-packages (from -r /workspace/spice-lab/requirements.lock (line 151)) (4.66.1)
+Requirement already satisfied: kiwisolver==1.5.1 in ./.venv/lib/python3.12/site-packages (from -r /workspace/spice-lab/requirements.lock (line 211)) (1.5.1)
+Requirement already satisfied: matplotlib==3.10.8 in ./.venv/lib/python3.12/site-packages (from -r /workspace/spice-lab/requirements.lock (line 354)) (3.10.8)
+Requirement already satisfied: numpy==2.3.5 in ./.venv/lib/python3.12/site-packages (from -r /workspace/spice-lab/requirements.lock (line 411)) (2.3.5)
+Requirement already satisfied: packaging==26.3 in ./.venv/lib/python3.12/site-packages (from -r /workspace/spice-lab/requirements.lock (line 492)) (26.3)
+Requirement already satisfied: pandas==2.2.3 in ./.venv/lib/python3.12/site-packages (from -r /workspace/spice-lab/requirements.lock (line 496)) (2.2.3)
+Requirement already satisfied: pillow==12.3.0 in ./.venv/lib/python3.12/site-packages (from -r /workspace/spice-lab/requirements.lock (line 540)) (12.3.0)
+Requirement already satisfied: pyparsing==3.3.3 in ./.venv/lib/python3.12/site-packages (from -r /workspace/spice-lab/requirements.lock (line 629)) (3.3.3)
+Requirement already satisfied: python-dateutil==2.9.0.post0 in ./.venv/lib/python3.12/site-packages (from -r /workspace/spice-lab/requirements.lock (line 633)) (2.9.0.post0)
+Requirement already satisfied: pytz==2026.5 in ./.venv/lib/python3.12/site-packages (from -r /workspace/spice-lab/requirements.lock (line 639)) (2026.5)
+Requirement already satisfied: scipy==1.17.0 in ./.venv/lib/python3.12/site-packages (from -r /workspace/spice-lab/requirements.lock (line 643)) (1.17.0)
+Requirement already satisfied: six==1.17.0 in ./.venv/lib/python3.12/site-packages (from -r /workspace/spice-lab/requirements.lock (line 706)) (1.17.0)
+Requirement already satisfied: tzdata==2026.5 in ./.venv/lib/python3.12/site-packages (from -r /workspace/spice-lab/requirements.lock (line 710)) (2026.5)
+No broken requirements found.
+******
+** ngspice-44.2 : Circuit level simulation program
+** Compiled with KLU Direct Linear Solver
+** The U. C. Berkeley CAD Group
+** Copyright 1985-1994, Regents of the University of California.
+** Copyright 2001-2024, The ngspice team.
+** Please get your ngspice manual from https://ngspice.sourceforge.io/docs.html
+** Please file your bug-reports at http://ngspice.sourceforge.net/bugrep.html
+** Creation Date: Sun Jan 12 08:19:15 UTC 2025
+******
+Python 3.12.14
+numpy 2.3.5
+scipy 1.17.0
+matplotlib 3.10.8
+pandas 2.2.3
+{
+  "passed": true,
+  "checks": 18,
+  "metrics": {
+    "analog_samples": 41,
+    "analog_max_abs_error_V": 4.440892098500626e-16,
+    "digital_samples": 2101,
+    "digital_stable_samples": 1783,
+    "digital_max_stable_abs_error_V": 0.0
+  },
+  "report": "/workspace/spice-lab/.local/code_model_validation/model_report.md"
+}
+
+Setup complete. In Bash run: source "/workspace/spice-lab/.local/env.sh"

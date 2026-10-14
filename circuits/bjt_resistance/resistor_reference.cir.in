@@ -1,0 +1,26 @@
+Ideal resistor reference: {run_id}
+Isample 0 port DC {current_a:.16g} AC 1u
+Rreference port 0 {target_ohm:.16g}
+.temp {temperature_c:.16g}
+.options tnom=25 reltol=1e-7 abstol=1e-13 vntol=1e-10 gmin={gmin_s:.16g}
+.control
+set noaskquit
+set filetype=ascii
+set numdgt=15
+op
+write op.raw v(port) @rreference[i]
+ac lin 1 1 1
+write ac_1.raw v(port)
+ac lin 1 1000 1000
+write ac_1000.raw v(port)
+ac lin 1 100000 100000
+write ac_100000.raw v(port)
+alter Isample {plus_current_a:.16g}
+op
+write plus.raw v(port)
+alter Isample {minus_current_a:.16g}
+op
+write minus.raw v(port)
+quit
+.endc
+.end

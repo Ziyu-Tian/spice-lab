@@ -1,0 +1,17 @@
+{
+  "timestamp_utc": "2026-10-14T11:59:23.178562+00:00",
+  "passed": true,
+  "command": "/workspace/spice-lab/.venv/bin/python /workspace/spice-lab/scripts/verify_bjt_substrate.py --output-dir /workspace/spice-lab/examples/bjt_resistance/substrate_diagnostic --ngspice ngspice",
+  "ngspice_version": "ngspice-44.2 : Circuit level simulation program",
+  "source_sha256": {
+    "scripts/verify_bjt_substrate.py": "de73f43e854b35b6fa9f9d4713c2db076605e374e6fb7194c96f5749e40d648a",
+    "circuits/bjt_resistance/generic_npn.lib": "84a259c33ae6d1d380d82c932270315f3fbf59fd3a2543d29acc1f6280314422"
+  },
+  "counts": {
+    "ngspice_processes": 8,
+    "valid_op_samples": 8,
+    "warning_runs": 0,
+    "failed_runs": 0
+  },
+  "evidence_note": "This summary is transcribed from the actual tool-observed first run. Its generated raw outputs/logs were overwritten by the old script during the second reporting-change repeat. No original raw hash or output is invented."
+}

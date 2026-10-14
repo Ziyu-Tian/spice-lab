@@ -1,0 +1,14 @@
+XSPICE analog Code Model validation: gain 2.5 and offset 0.125 V
+VIN in 0 0
+AGAIN in out gain_test
+.model gain_test gain(gain=2.5 in_offset=0 out_offset=0.125)
+RLOAD out 0 1k
+.control
+set wr_singlescale
+set wr_vecnames
+set numdgt=15
+dc VIN -1 1 0.05
+wrdata analog_gain.txt v(in) v(out)
+quit
+.endc
+.end

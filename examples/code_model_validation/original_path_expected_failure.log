@@ -1,0 +1,86 @@
+Error opening code model "/usr/lib/x86_64-linux-gnu/ngspice/spice2poly.cm"
+: /usr/lib/x86_64-linux-gnu/ngspice/spice2poly.cm: cannot open shared object file: No such file or directory
+Error: Library /usr/lib/x86_64-linux-gnu/ngspice/spice2poly.cm couldn't be loaded!
+Error opening code model "/usr/lib/x86_64-linux-gnu/ngspice/analog.cm"
+: /usr/lib/x86_64-linux-gnu/ngspice/analog.cm: cannot open shared object file: No such file or directory
+Error: Library /usr/lib/x86_64-linux-gnu/ngspice/analog.cm couldn't be loaded!
+Error opening code model "/usr/lib/x86_64-linux-gnu/ngspice/digital.cm"
+: /usr/lib/x86_64-linux-gnu/ngspice/digital.cm: cannot open shared object file: No such file or directory
+Error: Library /usr/lib/x86_64-linux-gnu/ngspice/digital.cm couldn't be loaded!
+Error opening code model "/usr/lib/x86_64-linux-gnu/ngspice/xtradev.cm"
+: /usr/lib/x86_64-linux-gnu/ngspice/xtradev.cm: cannot open shared object file: No such file or directory
+Error: Library /usr/lib/x86_64-linux-gnu/ngspice/xtradev.cm couldn't be loaded!
+Error opening code model "/usr/lib/x86_64-linux-gnu/ngspice/xtraevt.cm"
+: /usr/lib/x86_64-linux-gnu/ngspice/xtraevt.cm: cannot open shared object file: No such file or directory
+Error: Library /usr/lib/x86_64-linux-gnu/ngspice/xtraevt.cm couldn't be loaded!
+Error opening code model "/usr/lib/x86_64-linux-gnu/ngspice/table.cm"
+: /usr/lib/x86_64-linux-gnu/ngspice/table.cm: cannot open shared object file: No such file or directory
+Error: Library /usr/lib/x86_64-linux-gnu/ngspice/table.cm couldn't be loaded!
+
+Note: No compatibility mode selected!
+
+
+Circuit: inspect loaded xspice code model registry
+
+
+Devices available in the simulator
+
+URC                  :	Uniform R.C. line
+ASRC                 :	Arbitrary Source 
+BJT                  :	Bipolar Junction Transistor
+BSIM1                :	Berkeley Short Channel IGFET Model
+BSIM2                :	Berkeley Short Channel IGFET Model
+BSIM3                :	Berkeley Short Channel IGFET Model Version-3
+BSIM3v0              :	Berkeley Short Channel IGFET Model Version-3 (3.0)
+BSIM3v1              :	Berkeley Short Channel IGFET Model Version-3 (3.1)
+BSIM3v32             :	Berkeley Short Channel IGFET Model Version-3
+B4SOI                :	Berkeley SOI MOSFET model version 4.4.0
+BSIM4                :	Berkeley Short Channel IGFET Model-4
+BSIM4v5              :	Berkeley Short Channel IGFET Model-4
+BSIM4v6              :	Berkeley Short Channel IGFET Model-4
+BSIM4v7              :	Berkeley Short Channel IGFET Model-4
+B3SOIPD              :	Berkeley SOI (PD) MOSFET model version 2.2.3
+B3SOIFD              :	Berkeley SOI MOSFET (FD) model version 2.1
+B3SOIDD              :	Berkeley SOI MOSFET (DD) model version 2.1
+Capacitor            :	Fixed capacitor
+CCCS                 :	Current controlled current source
+CCVS                 :	Linear current controlled current source
+CplLines             :	Simple Coupled Multiconductor Lines
+CSwitch              :	Current controlled ideal switch
+Diode                :	Junction Diode model
+HFET1                :	HFET1 Model
+HFET2                :	HFET2 Model
+hicum2               :	High Current Model for BJT
+HiSIM2               :	Hiroshima University STARC IGFET Model 2.8.0
+HiSIMHV1             :	Hiroshima University STARC IGFET Model - HiSIM_HV v.1
+HiSIMHV2             :	Hiroshima University STARC IGFET Model - HiSIM_HV v.2
+Inductor             :	Fixed inductor
+mutual               :	Mutual inductors
+Isource              :	Independent current source
+JFET                 :	Junction Field effect transistor
+JFET2                :	Short channel field effect transistor
+LTRA                 :	Lossy transmission line
+MES                  :	GaAs MESFET model
+MESA                 :	GaAs MESFET model
+Mos1                 :	Level 1 MOSfet model with Meyer capacitance model
+Mos2                 :	Level 2 MOSfet model with Meyer capacitance model
+Mos3                 :	Level 3 MOSfet model with Meyer capacitance model
+Mos6                 :	Level 6 MOSfet model with Meyer capacitance model
+Mos9                 :	Modified Level 3 MOSfet model
+Resistor             :	Simple linear resistor
+SOI3                 :	Basic Thick Film SOI3 model v2.7
+Switch               :	Ideal voltage controlled switch
+Tranline             :	Lossless transmission line
+TransLine            :	Simple Lossy Transmission Line
+VBIC                 :	Vertical Bipolar Inter-Company Model
+VCCS                 :	Voltage controlled current source
+VCVS                 :	Voltage controlled voltage source
+Vsource              :	Independent voltage source
+VDMOS                :	DMOS model based on Level 1 MOSFET model
+NBJT                 :	1D Numerical Bipolar Junction Transistor model
+NBJT2                :	2D Numerical Bipolar Junction Transistor model
+NUMD                 :	1D Numerical Junction Diode model
+NUMD2                :	2D Numerical Junction Diode model
+NUMOS                :	2D Numerical MOS Field Effect Transistor model
+
+ngspice-44.2 done

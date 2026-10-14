@@ -1,0 +1,227 @@
+{
+  "passed": true,
+  "timestamp_utc": "2026-10-14T11:46:25.136618+00:00",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "versions": {
+    "Python": "3.12.14",
+    "ngspice": "******\n** ngspice-44.2 : Circuit level simulation program\n** Compiled with KLU Direct Linear Solver\n** The U. C. Berkeley CAD Group\n** Copyright 1985-1994, Regents of the University of California.\n** Copyright 2001-2024, The ngspice team.\n** Please get your ngspice manual from https://ngspice.sourceforge.io/docs.html\n** Please file your bug-reports at http://ngspice.sourceforge.net/bugrep.html\n** Creation Date: Sun Jan 12 08:19:15 UTC 2025\n******",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8",
+    "pandas": "2.2.3"
+  },
+  "checks": [
+    {
+      "name": "library_dependencies:spice2poly.cm",
+      "passed": true,
+      "detail": "All dependencies resolve"
+    },
+    {
+      "name": "library_dependencies:analog.cm",
+      "passed": true,
+      "detail": "All dependencies resolve"
+    },
+    {
+      "name": "library_dependencies:digital.cm",
+      "passed": true,
+      "detail": "All dependencies resolve"
+    },
+    {
+      "name": "library_dependencies:xtradev.cm",
+      "passed": true,
+      "detail": "All dependencies resolve"
+    },
+    {
+      "name": "library_dependencies:xtraevt.cm",
+      "passed": true,
+      "detail": "All dependencies resolve"
+    },
+    {
+      "name": "library_dependencies:table.cm",
+      "passed": true,
+      "detail": "All dependencies resolve"
+    },
+    {
+      "name": "original_path_expected_failure",
+      "passed": true,
+      "detail": "Expected init failure reproduced for 6/6 libraries; ngspice exit=0"
+    },
+    {
+      "name": "registry_log_clean",
+      "passed": true,
+      "detail": "No errors or warnings"
+    },
+    {
+      "name": "model_registration:spice2poly.cm",
+      "passed": true,
+      "detail": "spice2poly"
+    },
+    {
+      "name": "model_registration:analog.cm",
+      "passed": true,
+      "detail": "gain"
+    },
+    {
+      "name": "model_registration:digital.cm",
+      "passed": true,
+      "detail": "d_inverter"
+    },
+    {
+      "name": "model_registration:xtradev.cm",
+      "passed": true,
+      "detail": "cmeter"
+    },
+    {
+      "name": "model_registration:xtraevt.cm",
+      "passed": true,
+      "detail": "real_gain"
+    },
+    {
+      "name": "model_registration:table.cm",
+      "passed": true,
+      "detail": "table2d"
+    },
+    {
+      "name": "analog_log_clean",
+      "passed": true,
+      "detail": "No errors or warnings"
+    },
+    {
+      "name": "analog_gain_numerical",
+      "passed": true,
+      "detail": "41 DC points; max absolute error 4.44089e-16 V"
+    },
+    {
+      "name": "digital_log_clean",
+      "passed": true,
+      "detail": "No errors or warnings"
+    },
+    {
+      "name": "digital_inverter_numerical",
+      "passed": true,
+      "detail": "2101 transient points, 1783 stable samples; max error 0 V"
+    }
+  ],
+  "metrics": {
+    "analog_samples": 41,
+    "analog_max_abs_error_V": 4.440892098500626e-16,
+    "digital_samples": 2101,
+    "digital_stable_samples": 1783,
+    "digital_max_stable_abs_error_V": 0.0
+  },
+  "commands": [
+    {
+      "command": "dpkg-architecture -qDEB_HOST_MULTIARCH",
+      "cwd": "/workspace/spice-lab/examples/code_model_validation",
+      "exit_code": 0,
+      "console_log": "multiarch_console.log"
+    },
+    {
+      "command": "/workspace/spice-lab/.local/bin/ngspice --version",
+      "cwd": "/workspace/spice-lab/examples/code_model_validation",
+      "exit_code": 0,
+      "console_log": "ngspice_version_console.log"
+    },
+    {
+      "command": "ldd /workspace/spice-lab/.local/ngspice/usr/lib/x86_64-linux-gnu/ngspice/spice2poly.cm",
+      "cwd": "/workspace/spice-lab/examples/code_model_validation",
+      "exit_code": 0,
+      "console_log": "spice2poly_ldd_console.log",
+      "environment_overrides": {
+        "LD_LIBRARY_PATH": "/workspace/spice-lab/.local/ngspice/usr/lib/x86_64-linux-gnu"
+      }
+    },
+    {
+      "command": "ldd /workspace/spice-lab/.local/ngspice/usr/lib/x86_64-linux-gnu/ngspice/analog.cm",
+      "cwd": "/workspace/spice-lab/examples/code_model_validation",
+      "exit_code": 0,
+      "console_log": "analog_ldd_console.log",
+      "environment_overrides": {
+        "LD_LIBRARY_PATH": "/workspace/spice-lab/.local/ngspice/usr/lib/x86_64-linux-gnu"
+      }
+    },
+    {
+      "command": "ldd /workspace/spice-lab/.local/ngspice/usr/lib/x86_64-linux-gnu/ngspice/digital.cm",
+      "cwd": "/workspace/spice-lab/examples/code_model_validation",
+      "exit_code": 0,
+      "console_log": "digital_ldd_console.log",
+      "environment_overrides": {
+        "LD_LIBRARY_PATH": "/workspace/spice-lab/.local/ngspice/usr/lib/x86_64-linux-gnu"
+      }
+    },
+    {
+      "command": "ldd /workspace/spice-lab/.local/ngspice/usr/lib/x86_64-linux-gnu/ngspice/xtradev.cm",
+      "cwd": "/workspace/spice-lab/examples/code_model_validation",
+      "exit_code": 0,
+      "console_log": "xtradev_ldd_console.log",
+      "environment_overrides": {
+        "LD_LIBRARY_PATH": "/workspace/spice-lab/.local/ngspice/usr/lib/x86_64-linux-gnu"
+      }
+    },
+    {
+      "command": "ldd /workspace/spice-lab/.local/ngspice/usr/lib/x86_64-linux-gnu/ngspice/xtraevt.cm",
+      "cwd": "/workspace/spice-lab/examples/code_model_validation",
+      "exit_code": 0,
+      "console_log": "xtraevt_ldd_console.log",
+      "environment_overrides": {
+        "LD_LIBRARY_PATH": "/workspace/spice-lab/.local/ngspice/usr/lib/x86_64-linux-gnu"
+      }
+    },
+    {
+      "command": "ldd /workspace/spice-lab/.local/ngspice/usr/lib/x86_64-linux-gnu/ngspice/table.cm",
+      "cwd": "/workspace/spice-lab/examples/code_model_validation",
+      "exit_code": 0,
+      "console_log": "table_ldd_console.log",
+      "environment_overrides": {
+        "LD_LIBRARY_PATH": "/workspace/spice-lab/.local/ngspice/usr/lib/x86_64-linux-gnu"
+      }
+    },
+    {
+      "command": "/workspace/spice-lab/.local/ngspice/usr/bin/ngspice -b -o /workspace/spice-lab/examples/code_model_validation/original_path_expected_failure.log /workspace/spice-lab/circuits/code_model_validation/model_registry.cir",
+      "cwd": "/workspace/spice-lab/examples/code_model_validation",
+      "exit_code": 0,
+      "console_log": "original_path_expected_failure_console.log",
+      "environment_overrides": {
+        "LD_LIBRARY_PATH": "/workspace/spice-lab/.local/ngspice/usr/lib/x86_64-linux-gnu",
+        "SPICE_SCRIPTS": "/workspace/spice-lab/.local/ngspice/usr/share/ngspice/scripts"
+      }
+    },
+    {
+      "command": "/workspace/spice-lab/.local/bin/ngspice -b -o /workspace/spice-lab/examples/code_model_validation/model_registry.log /workspace/spice-lab/circuits/code_model_validation/model_registry.cir",
+      "cwd": "/workspace/spice-lab/examples/code_model_validation",
+      "exit_code": 0,
+      "console_log": "model_registry_console.log"
+    },
+    {
+      "command": "/workspace/spice-lab/.local/bin/ngspice -b -o /workspace/spice-lab/examples/code_model_validation/analog_gain.log /workspace/spice-lab/circuits/code_model_validation/analog_gain.cir",
+      "cwd": "/workspace/spice-lab/examples/code_model_validation",
+      "exit_code": 0,
+      "console_log": "analog_gain_console.log"
+    },
+    {
+      "command": "/workspace/spice-lab/.local/bin/ngspice -b -o /workspace/spice-lab/examples/code_model_validation/digital_inverter.log /workspace/spice-lab/circuits/code_model_validation/digital_inverter.cir",
+      "cwd": "/workspace/spice-lab/examples/code_model_validation",
+      "exit_code": 0,
+      "console_log": "digital_inverter_console.log"
+    }
+  ],
+  "diagnostics": {
+    "expected_original_failure": [
+      "Error opening code model \"/usr/lib/x86_64-linux-gnu/ngspice/spice2poly.cm\"",
+      "Error: Library /usr/lib/x86_64-linux-gnu/ngspice/spice2poly.cm couldn't be loaded!",
+      "Error opening code model \"/usr/lib/x86_64-linux-gnu/ngspice/analog.cm\"",
+      "Error: Library /usr/lib/x86_64-linux-gnu/ngspice/analog.cm couldn't be loaded!",
+      "Error opening code model \"/usr/lib/x86_64-linux-gnu/ngspice/digital.cm\"",
+      "Error: Library /usr/lib/x86_64-linux-gnu/ngspice/digital.cm couldn't be loaded!",
+      "Error opening code model \"/usr/lib/x86_64-linux-gnu/ngspice/xtradev.cm\"",
+      "Error: Library /usr/lib/x86_64-linux-gnu/ngspice/xtradev.cm couldn't be loaded!",
+      "Error opening code model \"/usr/lib/x86_64-linux-gnu/ngspice/xtraevt.cm\"",
+      "Error: Library /usr/lib/x86_64-linux-gnu/ngspice/xtraevt.cm couldn't be loaded!",
+      "Error opening code model \"/usr/lib/x86_64-linux-gnu/ngspice/table.cm\"",
+      "Error: Library /usr/lib/x86_64-linux-gnu/ngspice/table.cm couldn't be loaded!"
+    ],
+    "registry": [],
+    "analog": [],
+    "digital": []
+  }
+}

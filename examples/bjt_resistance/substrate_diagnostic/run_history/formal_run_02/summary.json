@@ -1,0 +1,37 @@
+{
+  "timestamp_utc": "2026-10-14T12:00:44.686223+00:00",
+  "passed": true,
+  "command": "/workspace/spice-lab/.venv/bin/python /workspace/spice-lab/scripts/verify_bjt_substrate.py --output-dir /workspace/spice-lab/examples/bjt_resistance/substrate_diagnostic --ngspice ngspice",
+  "python_version": "3.12.14",
+  "source_links": [
+    "https://github.com/ngspice/ngspice/blob/master/src/spicelib/devices/bjt/bjtload.c#L458",
+    "https://github.com/ngspice/ngspice/blob/master/src/spicelib/devices/bjt/bjtsetup.c#L454",
+    "https://github.com/ngspice/ngspice/blob/master/src/spicelib/devices/bjt/bjtask.c#L239"
+  ],
+  "main_scan_is_unchanged": true,
+  "source_sha256": {
+    "scripts/verify_bjt_substrate.py": "65698b62e3b22887d3c127b8c33a29b90f9c1490912f4bac22450c1a2d578935",
+    "circuits/bjt_resistance/generic_npn.lib": "84a259c33ae6d1d380d82c932270315f3fbf59fd3a2543d29acc1f6280314422"
+  },
+  "ngspice_version": "ngspice-44.2 : Circuit level simulation program",
+  "checks": {
+    "eight_valid_op_runs": true,
+    "model_readout_sum_with_is_below_1e-12_a": true,
+    "external_kcl_with_substrate_within_solver_tolerance": true,
+    "explicit_substrate_sensor_matches_model_is": true,
+    "gdsub_equals_gmin": true,
+    "implicit_and_explicit_ground_match": true
+  },
+  "counts": {
+    "ngspice_processes": 8,
+    "valid_op_samples": 8,
+    "warning_runs": 0,
+    "failed_runs": 0
+  },
+  "development_attempt": {
+    "ngspice_processes": 16,
+    "valid_op_outputs": 8,
+    "missing_op_outputs": 8,
+    "note": "Initial eight runs requested an unavailable internal-node vector; eight readout retries succeeded. All original evidence is preserved separately."
+  }
+}

@@ -1,0 +1,24 @@
+
+Note: No compatibility mode selected!
+
+
+Circuit: xspice mixed analog/digital code model validation: adc inverter dac
+
+Reducing trtol to 1 for xspice 'A' devices
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+in                                           0
+out                                        3.3
+vin#branch                                   0
+adac#branch_1_0                        -0.0033
+
+
+No. of Data Rows : 2101
+ngspice-44.2 done
