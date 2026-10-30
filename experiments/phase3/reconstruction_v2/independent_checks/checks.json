@@ -1,0 +1,57 @@
+[
+  {
+    "code": 30,
+    "collector_KCL_A": 7.815287045992436e-13,
+    "base_KCL_A": -3.903127820947816e-18,
+    "transistor_KCL_A": 7.811857172419778e-13,
+    "wiper_KCL_A": -4.391018798566293e-18,
+    "AC_ohm": 2631.371090223098,
+    "status": "PASS",
+    "DC_incremental_ohm": 2631.3711284586816,
+    "impedance_status": "PASS"
+  },
+  {
+    "code": 41,
+    "collector_KCL_A": 7.285087789098144e-13,
+    "base_KCL_A": 3.2255014631443757e-18,
+    "transistor_KCL_A": 7.286266858960722e-13,
+    "wiper_KCL_A": 3.5236570605778894e-18,
+    "AC_ohm": 2683.778912360916,
+    "status": "PASS",
+    "DC_incremental_ohm": 2683.7788775990743,
+    "impedance_status": "PASS"
+  },
+  {
+    "code": 43,
+    "collector_KCL_A": 7.189065965793051e-13,
+    "base_KCL_A": -2.0464316005663896e-18,
+    "transistor_KCL_A": 7.187263479681294e-13,
+    "wiper_KCL_A": -2.5343225781848666e-18,
+    "AC_ohm": 2692.327922233113,
+    "status": "PASS",
+    "DC_incremental_ohm": 2692.327893250024,
+    "impedance_status": "PASS"
+  },
+  {
+    "code": 73,
+    "collector_KCL_A": 5.567706668971328e-13,
+    "base_KCL_A": -1.3552527156068805e-19,
+    "transistor_KCL_A": 5.566839849334426e-13,
+    "wiper_KCL_A": 1.2197274440461925e-19,
+    "AC_ohm": 2788.785500831584,
+    "status": "PASS",
+    "DC_incremental_ohm": 2788.7854701980073,
+    "impedance_status": "PASS"
+  },
+  {
+    "code": 75,
+    "collector_KCL_A": 5.450431230479003e-13,
+    "base_KCL_A": -2.8053731213062427e-18,
+    "transistor_KCL_A": 5.449253786919683e-13,
+    "wiper_KCL_A": -2.859583229930518e-18,
+    "AC_ohm": 2793.283906314411,
+    "status": "PASS",
+    "DC_incremental_ohm": 2793.2839274491525,
+    "impedance_status": "PASS"
+  }
+]

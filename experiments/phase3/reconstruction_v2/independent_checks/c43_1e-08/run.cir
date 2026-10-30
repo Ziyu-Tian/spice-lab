@@ -1,0 +1,27 @@
+PCB-ground-referenced loaded pot; external C/E preserved
+Vrail hi 0 5
+Vrtn rtn 0 -1.6936179051569447
+Vcode code 0 43
+Bupper hi tap I=v(hi,tap)/(50000*(1-v(code)/256))
+Blower tap 0 I=v(tap)/max(1e-6,50000*v(code)/256)
+Rw tap w 100
+Rb w b 29900
+Q1 sensor b e rtn N
+Re e rtn 9.9999999999999995e-07
+Vexc ex rtn -3.4073629332569437
+Rs ex sensor 6158.335720423941
+* no shaping resistor
+.model N NPN(IS=1.0000000187366677e-16 BF=100 BR=5.5087673011747222 VAF=100 VAR=10 RB=100 RC=1 RE=1 CJE=10p CJC=4p TF=.4n TR=50n EG=1.11 XTI=3 TNOM=25)
+.temp 25
+.options reltol=1e-7 abstol=1e-13
+Iprobe rtn sensor DC 1e-08 AC 1
+.control
+set filetype=ascii
+save all @q1[ib] @q1[ic] @q1[ie]
+op
+write op.raw all
+ac lin 1 1 1
+write ac.raw all
+quit
+.endc
+.end

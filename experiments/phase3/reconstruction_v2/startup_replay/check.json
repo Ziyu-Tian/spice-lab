@@ -1,0 +1,6 @@
+{
+  "command": "ngspice -n -b -o solver.log run.cir",
+  "reference": "reference_audit/run_0160",
+  "max_all_vector_difference": 0.0,
+  "status": "PASS"
+}

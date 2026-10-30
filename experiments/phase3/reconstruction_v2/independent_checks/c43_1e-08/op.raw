@@ -1,0 +1,42 @@
+Title: pcb-ground-referenced loaded pot; external c/e preserved
+Date: Fri Oct 30 20:54:15  2026
+Command: ngspice-44.2, Build Sun Jan 12 08:19:15 UTC 2025
+Plotname: Operating Point
+Flags: real
+No. Variables: 16
+No. Points: 1
+Variables:
+	0	v(hi)	voltage
+	1	i(@q1[ib])	current
+	2	i(@q1[ic])	current
+	3	i(@q1[ie])	current
+	4	v(b)	voltage
+	5	v(code)	voltage
+	6	v(e)	voltage
+	7	v(ex)	voltage
+	8	v(rtn)	voltage
+	9	v(sensor)	voltage
+	10	v(tap)	voltage
+	11	i(vcode)	current
+	12	i(vexc)	current
+	13	i(vrail)	current
+	14	i(vrtn)	current
+	15	v(w)	voltage
+Values:
+ 0	5.000000000000000e+00
+	6.763566815525855e-05
+	-4.365084122727203e-04
+	3.688727448361612e-04
+	-1.661848276952855e+00
+	4.300000000000000e+01
+	-1.693617905525817e+00
+	-5.100980838413888e+00
+	-1.693617905156945e+00
+	-2.412753903065369e+00
+	3.672217677047916e-01
+	0.000000000000000e+00
+	4.365184129915316e-04
+	-1.113606786354529e-04
+	6.763566975462616e-05
+	3.604582008892662e-01
+
