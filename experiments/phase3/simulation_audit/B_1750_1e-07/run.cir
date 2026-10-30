@@ -1,0 +1,15 @@
+Excitation B; RTN=0 (not PCB local ground)
+Vexc supply 0 DC -3.4073629332569437
+Rs supply sensor 6158.335720423941
+Rload sensor 0 1750
+Iprobe 0 sensor DC 9.9999999999999995e-08 AC 1
+.options reltol=1e-9 abstol=1e-14
+.control
+set filetype=ascii
+op
+write op.raw all
+ac lin 1 1 1
+write ac.raw all
+quit
+.endc
+.end

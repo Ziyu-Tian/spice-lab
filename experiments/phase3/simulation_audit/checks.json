@@ -1,0 +1,62 @@
+[
+  {
+    "model": "A",
+    "R": 1170,
+    "predicted_V": -0.5440000000000002,
+    "error_mV": -1.1102230246251565e-13,
+    "dc_incremental_ohm": 983.2045184299254,
+    "ac_incremental_ohm": 983.2045184304399,
+    "kcl_A": -5.421010862427522e-20,
+    "status": "PASS"
+  },
+  {
+    "model": "A",
+    "R": 1750,
+    "predicted_V": -0.7540000000000001,
+    "error_mV": -1.1102230246251565e-13,
+    "dc_incremental_ohm": 1362.7503803237407,
+    "ac_incremental_ohm": 1362.750380324543,
+    "kcl_A": -5.421010862427522e-20,
+    "status": "PASS"
+  },
+  {
+    "model": "B",
+    "R": 1170,
+    "predicted_V": -0.544,
+    "error_mV": 0.0,
+    "dc_incremental_ohm": 983.2045184299254,
+    "ac_incremental_ohm": 983.2045184304399,
+    "kcl_A": 0.0,
+    "status": "PASS"
+  },
+  {
+    "model": "B",
+    "R": 1750,
+    "predicted_V": -0.7539999999999999,
+    "error_mV": 1.1102230246251565e-13,
+    "dc_incremental_ohm": 1362.7503803242957,
+    "ac_incremental_ohm": 1362.750380324543,
+    "kcl_A": 1.0842021724855044e-19,
+    "status": "PASS"
+  },
+  {
+    "model": "C",
+    "R": 1170,
+    "predicted_V": -0.5440000000032,
+    "error_mV": -3.1999958238770887e-09,
+    "dc_incremental_ohm": 1170.0000000003374,
+    "ac_incremental_ohm": 1170.0,
+    "kcl_A": -2.7350084003119335e-15,
+    "status": "PASS"
+  },
+  {
+    "model": "C",
+    "R": 1750,
+    "predicted_V": -0.7540000000010229,
+    "error_mV": -1.0228484725871567e-09,
+    "dc_incremental_ohm": 9.943181818461433,
+    "ac_incremental_ohm": 9.943181818181818,
+    "kcl_A": -1.0286969843661953e-13,
+    "status": "PASS"
+  }
+]

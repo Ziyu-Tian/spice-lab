@@ -1,0 +1,695 @@
+[
+  {
+    "run": "A_0.1_-1e-07",
+    "returncode": 0,
+    "command": [
+      "/workspace/spice-lab/.local/bin/ngspice",
+      "-b",
+      "-o",
+      "solver.log",
+      "run.cir"
+    ]
+  },
+  {
+    "run": "A_0.1_0",
+    "returncode": 0,
+    "command": [
+      "/workspace/spice-lab/.local/bin/ngspice",
+      "-b",
+      "-o",
+      "solver.log",
+      "run.cir"
+    ]
+  },
+  {
+    "run": "A_0.1_1e-07",
+    "returncode": 0,
+    "command": [
+      "/workspace/spice-lab/.local/bin/ngspice",
+      "-b",
+      "-o",
+      "solver.log",
+      "run.cir"
+    ]
+  },
+  {
+    "run": "A_500_-1e-07",
+    "returncode": 0,
+    "command": [
+      "/workspace/spice-lab/.local/bin/ngspice",
+      "-b",
+      "-o",
+      "solver.log",
+      "run.cir"
+    ]
+  },
+  {
+    "run": "A_500_0",
+    "returncode": 0,
+    "command": [
+      "/workspace/spice-lab/.local/bin/ngspice",
+      "-b",
+      "-o",
+      "solver.log",
+      "run.cir"
+    ]
+  },
+  {
+    "run": "A_500_1e-07",
+    "returncode": 0,
+    "command": [
+      "/workspace/spice-lab/.local/bin/ngspice",
+      "-b",
+      "-o",
+      "solver.log",
+      "run.cir"
+    ]
+  },
+  {
+    "run": "A_1170_-1e-07",
+    "returncode": 0,
+    "command": [
+      "/workspace/spice-lab/.local/bin/ngspice",
+      "-b",
+      "-o",
+      "solver.log",
+      "run.cir"
+    ]
+  },
+  {
+    "run": "A_1170_0",
+    "returncode": 0,
+    "command": [
+      "/workspace/spice-lab/.local/bin/ngspice",
+      "-b",
+      "-o",
+      "solver.log",
+      "run.cir"
+    ]
+  },
+  {
+    "run": "A_1170_1e-07",
+    "returncode": 0,
+    "command": [
+      "/workspace/spice-lab/.local/bin/ngspice",
+      "-b",
+      "-o",
+      "solver.log",
+      "run.cir"
+    ]
+  },
+  {
+    "run": "A_1750_-1e-07",
+    "returncode": 0,
+    "command": [
+      "/workspace/spice-lab/.local/bin/ngspice",
+      "-b",
+      "-o",
+      "solver.log",
+      "run.cir"
+    ]
+  },
+  {
+    "run": "A_1750_0",
+    "returncode": 0,
+    "command": [
+      "/workspace/spice-lab/.local/bin/ngspice",
+      "-b",
+      "-o",
+      "solver.log",
+      "run.cir"
+    ]
+  },
+  {
+    "run": "A_1750_1e-07",
+    "returncode": 0,
+    "command": [
+      "/workspace/spice-lab/.local/bin/ngspice",
+      "-b",
+      "-o",
+      "solver.log",
+      "run.cir"
+    ]
+  },
+  {
+    "run": "A_3300_-1e-07",
+    "returncode": 0,
+    "command": [
+      "/workspace/spice-lab/.local/bin/ngspice",
+      "-b",
+      "-o",
+      "solver.log",
+      "run.cir"
+    ]
+  },
+  {
+    "run": "A_3300_0",
+    "returncode": 0,
+    "command": [
+      "/workspace/spice-lab/.local/bin/ngspice",
+      "-b",
+      "-o",
+      "solver.log",
+      "run.cir"
+    ]
+  },
+  {
+    "run": "A_3300_1e-07",
+    "returncode": 0,
+    "command": [
+      "/workspace/spice-lab/.local/bin/ngspice",
+      "-b",
+      "-o",
+      "solver.log",
+      "run.cir"
+    ]
+  },
+  {
+    "run": "A_10000_-1e-07",
+    "returncode": 0,
+    "command": [
+      "/workspace/spice-lab/.local/bin/ngspice",
+      "-b",
+      "-o",
+      "solver.log",
+      "run.cir"
+    ]
+  },
+  {
+    "run": "A_10000_0",
+    "returncode": 0,
+    "command": [
+      "/workspace/spice-lab/.local/bin/ngspice",
+      "-b",
+      "-o",
+      "solver.log",
+      "run.cir"
+    ]
+  },
+  {
+    "run": "A_10000_1e-07",
+    "returncode": 0,
+    "command": [
+      "/workspace/spice-lab/.local/bin/ngspice",
+      "-b",
+      "-o",
+      "solver.log",
+      "run.cir"
+    ]
+  },
+  {
+    "run": "A_1e+09_-1e-07",
+    "returncode": 0,
+    "command": [
+      "/workspace/spice-lab/.local/bin/ngspice",
+      "-b",
+      "-o",
+      "solver.log",
+      "run.cir"
+    ]
+  },
+  {
+    "run": "A_1e+09_0",
+    "returncode": 0,
+    "command": [
+      "/workspace/spice-lab/.local/bin/ngspice",
+      "-b",
+      "-o",
+      "solver.log",
+      "run.cir"
+    ]
+  },
+  {
+    "run": "A_1e+09_1e-07",
+    "returncode": 0,
+    "command": [
+      "/workspace/spice-lab/.local/bin/ngspice",
+      "-b",
+      "-o",
+      "solver.log",
+      "run.cir"
+    ]
+  },
+  {
+    "run": "B_0.1_-1e-07",
+    "returncode": 0,
+    "command": [
+      "/workspace/spice-lab/.local/bin/ngspice",
+      "-b",
+      "-o",
+      "solver.log",
+      "run.cir"
+    ]
+  },
+  {
+    "run": "B_0.1_0",
+    "returncode": 0,
+    "command": [
+      "/workspace/spice-lab/.local/bin/ngspice",
+      "-b",
+      "-o",
+      "solver.log",
+      "run.cir"
+    ]
+  },
+  {
+    "run": "B_0.1_1e-07",
+    "returncode": 0,
+    "command": [
+      "/workspace/spice-lab/.local/bin/ngspice",
+      "-b",
+      "-o",
+      "solver.log",
+      "run.cir"
+    ]
+  },
+  {
+    "run": "B_500_-1e-07",
+    "returncode": 0,
+    "command": [
+      "/workspace/spice-lab/.local/bin/ngspice",
+      "-b",
+      "-o",
+      "solver.log",
+      "run.cir"
+    ]
+  },
+  {
+    "run": "B_500_0",
+    "returncode": 0,
+    "command": [
+      "/workspace/spice-lab/.local/bin/ngspice",
+      "-b",
+      "-o",
+      "solver.log",
+      "run.cir"
+    ]
+  },
+  {
+    "run": "B_500_1e-07",
+    "returncode": 0,
+    "command": [
+      "/workspace/spice-lab/.local/bin/ngspice",
+      "-b",
+      "-o",
+      "solver.log",
+      "run.cir"
+    ]
+  },
+  {
+    "run": "B_1170_-1e-07",
+    "returncode": 0,
+    "command": [
+      "/workspace/spice-lab/.local/bin/ngspice",
+      "-b",
+      "-o",
+      "solver.log",
+      "run.cir"
+    ]
+  },
+  {
+    "run": "B_1170_0",
+    "returncode": 0,
+    "command": [
+      "/workspace/spice-lab/.local/bin/ngspice",
+      "-b",
+      "-o",
+      "solver.log",
+      "run.cir"
+    ]
+  },
+  {
+    "run": "B_1170_1e-07",
+    "returncode": 0,
+    "command": [
+      "/workspace/spice-lab/.local/bin/ngspice",
+      "-b",
+      "-o",
+      "solver.log",
+      "run.cir"
+    ]
+  },
+  {
+    "run": "B_1750_-1e-07",
+    "returncode": 0,
+    "command": [
+      "/workspace/spice-lab/.local/bin/ngspice",
+      "-b",
+      "-o",
+      "solver.log",
+      "run.cir"
+    ]
+  },
+  {
+    "run": "B_1750_0",
+    "returncode": 0,
+    "command": [
+      "/workspace/spice-lab/.local/bin/ngspice",
+      "-b",
+      "-o",
+      "solver.log",
+      "run.cir"
+    ]
+  },
+  {
+    "run": "B_1750_1e-07",
+    "returncode": 0,
+    "command": [
+      "/workspace/spice-lab/.local/bin/ngspice",
+      "-b",
+      "-o",
+      "solver.log",
+      "run.cir"
+    ]
+  },
+  {
+    "run": "B_3300_-1e-07",
+    "returncode": 0,
+    "command": [
+      "/workspace/spice-lab/.local/bin/ngspice",
+      "-b",
+      "-o",
+      "solver.log",
+      "run.cir"
+    ]
+  },
+  {
+    "run": "B_3300_0",
+    "returncode": 0,
+    "command": [
+      "/workspace/spice-lab/.local/bin/ngspice",
+      "-b",
+      "-o",
+      "solver.log",
+      "run.cir"
+    ]
+  },
+  {
+    "run": "B_3300_1e-07",
+    "returncode": 0,
+    "command": [
+      "/workspace/spice-lab/.local/bin/ngspice",
+      "-b",
+      "-o",
+      "solver.log",
+      "run.cir"
+    ]
+  },
+  {
+    "run": "B_10000_-1e-07",
+    "returncode": 0,
+    "command": [
+      "/workspace/spice-lab/.local/bin/ngspice",
+      "-b",
+      "-o",
+      "solver.log",
+      "run.cir"
+    ]
+  },
+  {
+    "run": "B_10000_0",
+    "returncode": 0,
+    "command": [
+      "/workspace/spice-lab/.local/bin/ngspice",
+      "-b",
+      "-o",
+      "solver.log",
+      "run.cir"
+    ]
+  },
+  {
+    "run": "B_10000_1e-07",
+    "returncode": 0,
+    "command": [
+      "/workspace/spice-lab/.local/bin/ngspice",
+      "-b",
+      "-o",
+      "solver.log",
+      "run.cir"
+    ]
+  },
+  {
+    "run": "B_1e+09_-1e-07",
+    "returncode": 0,
+    "command": [
+      "/workspace/spice-lab/.local/bin/ngspice",
+      "-b",
+      "-o",
+      "solver.log",
+      "run.cir"
+    ]
+  },
+  {
+    "run": "B_1e+09_0",
+    "returncode": 0,
+    "command": [
+      "/workspace/spice-lab/.local/bin/ngspice",
+      "-b",
+      "-o",
+      "solver.log",
+      "run.cir"
+    ]
+  },
+  {
+    "run": "B_1e+09_1e-07",
+    "returncode": 0,
+    "command": [
+      "/workspace/spice-lab/.local/bin/ngspice",
+      "-b",
+      "-o",
+      "solver.log",
+      "run.cir"
+    ]
+  },
+  {
+    "run": "C_0.1_-1e-07",
+    "returncode": 0,
+    "command": [
+      "/workspace/spice-lab/.local/bin/ngspice",
+      "-b",
+      "-o",
+      "solver.log",
+      "run.cir"
+    ]
+  },
+  {
+    "run": "C_0.1_0",
+    "returncode": 0,
+    "command": [
+      "/workspace/spice-lab/.local/bin/ngspice",
+      "-b",
+      "-o",
+      "solver.log",
+      "run.cir"
+    ]
+  },
+  {
+    "run": "C_0.1_1e-07",
+    "returncode": 0,
+    "command": [
+      "/workspace/spice-lab/.local/bin/ngspice",
+      "-b",
+      "-o",
+      "solver.log",
+      "run.cir"
+    ]
+  },
+  {
+    "run": "C_500_-1e-07",
+    "returncode": 0,
+    "command": [
+      "/workspace/spice-lab/.local/bin/ngspice",
+      "-b",
+      "-o",
+      "solver.log",
+      "run.cir"
+    ]
+  },
+  {
+    "run": "C_500_0",
+    "returncode": 0,
+    "command": [
+      "/workspace/spice-lab/.local/bin/ngspice",
+      "-b",
+      "-o",
+      "solver.log",
+      "run.cir"
+    ]
+  },
+  {
+    "run": "C_500_1e-07",
+    "returncode": 0,
+    "command": [
+      "/workspace/spice-lab/.local/bin/ngspice",
+      "-b",
+      "-o",
+      "solver.log",
+      "run.cir"
+    ]
+  },
+  {
+    "run": "C_1170_-1e-07",
+    "returncode": 0,
+    "command": [
+      "/workspace/spice-lab/.local/bin/ngspice",
+      "-b",
+      "-o",
+      "solver.log",
+      "run.cir"
+    ]
+  },
+  {
+    "run": "C_1170_0",
+    "returncode": 0,
+    "command": [
+      "/workspace/spice-lab/.local/bin/ngspice",
+      "-b",
+      "-o",
+      "solver.log",
+      "run.cir"
+    ]
+  },
+  {
+    "run": "C_1170_1e-07",
+    "returncode": 0,
+    "command": [
+      "/workspace/spice-lab/.local/bin/ngspice",
+      "-b",
+      "-o",
+      "solver.log",
+      "run.cir"
+    ]
+  },
+  {
+    "run": "C_1750_-1e-07",
+    "returncode": 0,
+    "command": [
+      "/workspace/spice-lab/.local/bin/ngspice",
+      "-b",
+      "-o",
+      "solver.log",
+      "run.cir"
+    ]
+  },
+  {
+    "run": "C_1750_0",
+    "returncode": 0,
+    "command": [
+      "/workspace/spice-lab/.local/bin/ngspice",
+      "-b",
+      "-o",
+      "solver.log",
+      "run.cir"
+    ]
+  },
+  {
+    "run": "C_1750_1e-07",
+    "returncode": 0,
+    "command": [
+      "/workspace/spice-lab/.local/bin/ngspice",
+      "-b",
+      "-o",
+      "solver.log",
+      "run.cir"
+    ]
+  },
+  {
+    "run": "C_3300_-1e-07",
+    "returncode": 0,
+    "command": [
+      "/workspace/spice-lab/.local/bin/ngspice",
+      "-b",
+      "-o",
+      "solver.log",
+      "run.cir"
+    ]
+  },
+  {
+    "run": "C_3300_0",
+    "returncode": 0,
+    "command": [
+      "/workspace/spice-lab/.local/bin/ngspice",
+      "-b",
+      "-o",
+      "solver.log",
+      "run.cir"
+    ]
+  },
+  {
+    "run": "C_3300_1e-07",
+    "returncode": 0,
+    "command": [
+      "/workspace/spice-lab/.local/bin/ngspice",
+      "-b",
+      "-o",
+      "solver.log",
+      "run.cir"
+    ]
+  },
+  {
+    "run": "C_10000_-1e-07",
+    "returncode": 0,
+    "command": [
+      "/workspace/spice-lab/.local/bin/ngspice",
+      "-b",
+      "-o",
+      "solver.log",
+      "run.cir"
+    ]
+  },
+  {
+    "run": "C_10000_0",
+    "returncode": 0,
+    "command": [
+      "/workspace/spice-lab/.local/bin/ngspice",
+      "-b",
+      "-o",
+      "solver.log",
+      "run.cir"
+    ]
+  },
+  {
+    "run": "C_10000_1e-07",
+    "returncode": 0,
+    "command": [
+      "/workspace/spice-lab/.local/bin/ngspice",
+      "-b",
+      "-o",
+      "solver.log",
+      "run.cir"
+    ]
+  },
+  {
+    "run": "C_1e+09_-1e-07",
+    "returncode": 0,
+    "command": [
+      "/workspace/spice-lab/.local/bin/ngspice",
+      "-b",
+      "-o",
+      "solver.log",
+      "run.cir"
+    ]
+  },
+  {
+    "run": "C_1e+09_0",
+    "returncode": 0,
+    "command": [
+      "/workspace/spice-lab/.local/bin/ngspice",
+      "-b",
+      "-o",
+      "solver.log",
+      "run.cir"
+    ]
+  },
+  {
+    "run": "C_1e+09_1e-07",
+    "returncode": 0,
+    "command": [
+      "/workspace/spice-lab/.local/bin/ngspice",
+      "-b",
+      "-o",
+      "solver.log",
+      "run.cir"
+    ]
+  }
+]

@@ -1,0 +1,14 @@
+Title: excitation a; rtn=0 (not pcb local ground)
+Date: Fri Oct 30 16:47:41  2026
+Command: ngspice-44.2, Build Sun Jan 12 08:19:15 UTC 2025
+Plotname: AC Analysis
+Flags: complex
+No. Variables: 2
+No. Points: 1
+Variables:
+	0	frequency	frequency
+	1	v(sensor)	voltage
+Values:
+ 0	1.000000000000000e+00,0.000000000000000e+00
+	9.999837621102924e-02,0.000000000000000e+00
+

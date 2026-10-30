@@ -1,0 +1,14 @@
+Title: excitation a; rtn=0 (not pcb local ground)
+Date: Fri Oct 30 16:47:50  2026
+Command: ngspice-44.2, Build Sun Jan 12 08:19:15 UTC 2025
+Plotname: Operating Point
+Flags: real
+No. Variables: 2
+No. Points: 1
+Variables:
+	0	v(sensor)	voltage
+	1	v(all)	voltage
+Values:
+ 0	-1.188609260790362e+00
+	-1.188609260790362e+00
+
